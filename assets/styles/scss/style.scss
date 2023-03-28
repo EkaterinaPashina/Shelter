@@ -1,12 +1,87 @@
 @import "variables";
 @import "mixins";
-
-body{
-    background: $bggradient;
-    background-size:  $bgsize;
-    color: $white;
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
 // heder
+.header{
+    box-sizing: border-box;
+    background: $bggradient;
+    background-size: $bgsize;
+    padding:30px 40px 0 40px;
+}
+.navbar{
+    @include center-children;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+    li{
+        display: inline;      
+        a {
+            color:$color_l;
+            text-decoration: none;
+            margin-left: 35px;
+            color: $color_l;
+        &:active {
+            border-bottom:$color-primary 3px solid;
+            
+        }
+        &:hover {
+            color: $color-light-s;
+            border-bottom:$color-primary 3px solid;
+        }
+    }
+    }
+    }
+
+.block-main{
+    @include center-children;
+}
+.block-main__text{
+    color:$white;
+}
+
+.block-main__title{
+    @include h1;
+}
+
+.block-main__subtitle{
+    @include p;
+    color:$color_l;
+    padding-bottom: 42px;
+}
+
+.block-main__btn{
+    @include button-bg; 
+}
+.block-main__img{
+    align-items: end;
+}
+
+
+
+
+//     @include fontH($fsize:44px, $color:$white) ;
+//     width: 310px;
+// }
+// .subtitle{
+//     @include fontH($fsize:15px, $color:$white) ;
+// }
+
+//
+
 
 //первый блок-главная начало
 //первый блок-главная конец
