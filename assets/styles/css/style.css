@@ -1,10 +1,10 @@
-.block-main__title {
+h2.activity, .block-main__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
 }
 
-.block-main__subtitle {
+.p, .block-main__subtitle {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -29,7 +29,6 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .header {
@@ -130,4 +129,45 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+
+.activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h2.activity {
+  font-family: #545454;
+  font-size: 35px;
+  line-height: 45px;
+  /* line-height: 130%; */
+}
+
+.p {
+  font-family: #4C4C4C;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+}
+
+.pic {
+  padding: 80px 60px 80px 215px;
+}
+
+.text {
+  width: 33.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 80px 215px 80px 60px;
 }

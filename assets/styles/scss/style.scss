@@ -9,7 +9,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    border: 1px solid red;
+    
 }
 // heder
 .header{
@@ -72,6 +72,24 @@
 
 
 //первый блок-главная начало
+.activity {
+    display: flex;
+    justify-content: center;
+}
+h2.activity{font-family: $color-dark-l;
+    @include h2;
+}
+.p{font-family: $color-dark-xl;
+    @include p;
+}
+.pic{padding: 80px 60px 80px 215px;
+}
+.text{width: 33.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 80px 215px 80px 60px;
+}
 //первый блок-главная конец
 
 //второй блок-о_нас начало
