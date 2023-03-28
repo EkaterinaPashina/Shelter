@@ -22,6 +22,110 @@ body{
 
 
 //пятый блок-финпомощь начало
+.donation {
+    background: #F6F6F6;
+}
+.donation__container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.donation__block_p1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+}
+.donation__block_img {
+
+}
+.donation__block_text {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+/* or 45px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+
+color: #545454;
+
+}
+.search-form {
+    border: none;
+    width: 349px;
+    height: 43px;
+    display: inline-flex;
+    /* color-primary */
+
+    background: #F1CDB3;
+    border-radius: 9px;
+}
+.search-form__txt {
+    border: none;
+    width: 274px;
+    height: 23px;
+    margin-left: 60px;
+    margin-top: 10px;
+    outline: none;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+
+    background: #F1CDB3;
+}
+.search-form__btn {
+    border: none;
+    width: 30px;
+    height: 23px;
+    margin-left: 30px;
+    margin-top: 10px;
+    background: #F1CDB3;
+
+}
+.donation__block_p2 {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* color-dark-m */
+
+    color: #B2B2B2;
+}
 //пятый блок-финпомощь конец
 
 // ФУТЕР
