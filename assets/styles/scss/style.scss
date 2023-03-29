@@ -1,11 +1,12 @@
 @import "variables";
 @import "mixins";
 
-body{
+body {
     background: $bggradient;
-    background-size:  $bgsize;
+    background-size: $bgsize;
     color: $white;
 }
+
 // heder
 
 //первый блок-главная начало
