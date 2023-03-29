@@ -1,73 +1,86 @@
 @import "variables";
 @import "mixins";
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     box-sizing: border-box;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     border: 1px solid red;
 }
+
 // heder
-.header{
+.header {
     box-sizing: border-box;
     background: $bggradient;
     background-size: $bgsize;
-    padding:30px 40px 0 40px;
+    padding: 30px 40px 0 40px;
+    height: 100%;
 }
-.navbar{
+
+.navbar {
     @include center-children;
     justify-content: space-between;
 }
+
 .nav {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    
-    li{
-        display: inline;      
+
+    li {
+        display: inline;
+
         a {
-            color:$color_l;
+            color: $color_l;
             text-decoration: none;
             margin-left: 35px;
             color: $color_l;
-        &:active {
-            border-bottom:$color-primary 3px solid;
-            
-        }
-        &:hover {
-            color: $color-light-s;
-            border-bottom:$color-primary 3px solid;
-        }
-    }
-    }
-    }
 
-.block-main{
+            &:active {
+                border-bottom: $color-primary 3px solid;
+
+            }
+
+            &:hover {
+                color: $color-light-s;
+                border-bottom: $color-primary 3px solid;
+            }
+        }
+    }
+}
+
+.block-main {
     @include center-children;
 }
-.block-main__text{
-    color:$white;
+
+.block-main__text {
+    color: $white;
 }
 
-.block-main__title{
+.block-main__title {
     @include h1;
 }
 
-.block-main__subtitle{
+.block-main__subtitle {
     @include p;
-    color:$color_l;
+    color: $color_l;
     padding-bottom: 42px;
 }
 
-.block-main__btn{
-    @include button-bg; 
+.block-main__btn {
+    @include button-bg;
 }
-.block-main__img{
-    align-items: end;
+
+.block-main__img {
+    // max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -86,5 +99,9 @@
 
 //пятый блок-финпомощь начало
 //пятый блок-финпомощь конец
+
+// НЕ ТРОГАТЬ!!!!!!!!!!!
+//  картинка для модального окна набросок
+
 
 // ФУТЕР
