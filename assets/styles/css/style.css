@@ -1,17 +1,20 @@
-@charset "UTF-8";
-​ .item__h3, ​ .icons__h2, ​ body ​ h2.activity, ​ body ​ .block-main__title {
+.item__h3,
+.icons__h2,
+body h2.activity,
+body .block-main__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
 }
 
-​ body ​ .p, ​ body ​ .block-main__subtitle {
+body .p,
+body .block-main__subtitle {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
 }
 
-​ body ​ .block-main__btn {
+body .block-main__btn {
   height: 52px;
   padding: 15px 45px;
   border-radius: 100px;
@@ -19,106 +22,108 @@
   color: #292929;
 }
 
-​ body * {
+body * {
   margin: 0;
   padding: 0;
 }
-​ body ​ .container {
+body .container {
   box-sizing: border-box;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
-​ body ​ .header {
+body .header {
   box-sizing: border-box;
-  background: url(/assets/images/footer-gradient-background.svg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url(/assets/images/footer-gradient-background.svg),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
   background-size: cover;
   padding: 30px 40px 0 40px;
 }
-​ body ​ .navbar {
+body .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
-​ body ​ .nav {
+body .nav {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-​ body ​ .nav ​ li {
+body .nav li {
   display: inline;
 }
-​ body ​ .nav ​ li ​ a {
-  color: #CDCDCD;
+body .nav li a {
+  color: #cdcdcd;
   text-decoration: none;
   margin-left: 35px;
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
-​ ​ body ​ .nav ​ li ​ a:active {
-  border-bottom: #F1CDB3 3px solid;
+body .nav li a:active {
+  border-bottom: #f1cdb3 3px solid;
 }
-​ ​ body ​ .nav ​ li ​ a:hover {
+body .nav li a:hover {
   color: #fafafa;
-  border-bottom: #F1CDB3 3px solid;
+  border-bottom: #f1cdb3 3px solid;
 }
-​ body ​ .block-main {
+body .block-main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-​ body ​ .block-main__text {
+body .block-main__text {
   color: #fff;
 }
-​ body ​ .block-main__title {
+body .block-main__title {
   font-size: 44px;
   line-height: 130%;
   /* or 57px */
 }
-​ body ​ .block-main__subtitle {
+body .block-main__subtitle {
   font-size: 15px;
   line-height: 160%;
   /* or 24px */
-  color: #CDCDCD;
+  color: #cdcdcd;
   padding-bottom: 42px;
 }
-​ body ​ .block-main__btn {
-  background: #F1CDB3;
+body .block-main__btn {
+  background: #f1cdb3;
   border: none;
   cursor: pointer;
 }
-​ body ​ .block-main__btn:hover {
-  background-color: #FDDCC4;
+body .block-main__btn:hover {
+  background-color: #fddcc4;
   transition: 0.7s;
 }
-​ body ​ .block-main__btn:focus {
+body .block-main__btn:focus {
   outline-color: transparent;
   outline-style: solid;
   box-shadow: 0 0 0 2px #f3c496;
 }
-​ body ​ .block-main__img {
+body .block-main__img {
   align-items: end;
 }
-​ body ​ .activity {
+body .activity {
   display: flex;
   justify-content: center;
 }
-​ body ​ h2.activity {
+body h2.activity {
   font-family: #545454;
   font-size: 35px;
   line-height: 45px;
   /* line-height: 130%; */
 }
-​ body ​ .p {
-  font-family: #4C4C4C;
+body .p {
+  font-family: #4c4c4c;
   font-size: 15px;
   line-height: 160%;
   /* or 24px */
 }
-​ body ​ .pic {
+body .pic {
   padding: 80px 60px 80px 215px;
 }
-​ body ​ .text {
+body .text {
   width: 33.6%;
   display: flex;
   flex-direction: column;
@@ -126,14 +131,14 @@
   padding: 80px 215px 80px 60px;
 }
 
-​ ​ ​ ​ .icons {
+.icons {
   background-color: #fff;
   width: 1280px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
 
-​ .icons__line {
+.icons__line {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -143,7 +148,7 @@
   margin: 0 auto;
 }
 
-​ .icons__h2 {
+.icons__h2 {
   font-size: 35px;
   line-height: 45px;
   /* line-height: 130%; */
@@ -155,7 +160,7 @@
   margin: 0 auto;
 }
 
-​ .item__h3 {
+.item__h3 {
   font-size: 20px;
   line-height: 23px;
   /*line-height: 115%;*/
@@ -163,19 +168,19 @@
   padding-top: 25px;
 }
 
-​ .icons__item {
+.icons__item {
   text-align: center;
 }
 
-​ .item__h3_bowls {
+.item__h3_bowls {
   padding-top: 28px;
 }
 
-​ .icons__item_vit-col-position {
+.icons__item_vit-col-position {
   padding-top: 6px;
 }
 
-​ ​ .donation {
+.donation {
   background: #f6f6f6;
 }
 
@@ -274,35 +279,37 @@
   color: #b2b2b2;
 }
 
-​ .footer {
+.footer {
   height: 350px;
   box-sizing: border-box;
-  background: url(/assets/images/footer-gradient-background.svg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url(/assets/images/footer-gradient-background.svg),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
   background-size: cover;
   font-family: Georgia;
   display: flex;
   justify-content: space-between;
 }
-​ .footer ​ a {
+.footer a {
   text-decoration: none;
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
-​ ​ .footer ​ a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 
-​ .footer__contact {
+.footer__contact {
   padding-left: 40px;
   padding-top: 56px;
   padding-bottom: 60px;
 }
 
-​ .footer__contact,
+.footer__contact,
 .footer__address {
   color: #fff;
 }
 
-​ .footer__contact-about,
+.footer__contact-about,
 .footer__address-about {
   font-style: normal;
   font-weight: 400;
@@ -311,24 +318,24 @@
   letter-spacing: 0.06em;
 }
 
-​ .footer__contact-mail {
+.footer__contact-mail {
   padding-top: 43px;
   align-items: center;
 }
 
-​ .footer__contact-tel {
+.footer__contact-tel {
   padding-top: 43px;
   align-items: center;
 }
 
-​ .footer__contact-mail,
+.footer__contact-mail,
 .footer__contact-tel,
 .footer__address-1,
 .footer__address-2 {
   display: flex;
 }
 
-​ .footer__contact_ourmail,
+.footer__contact_ourmail,
 .footer__contact_ourtel,
 .footer__address_ouradress1,
 .footer__address_ouradress2 {
@@ -338,23 +345,23 @@
   line-height: 115%;
 }
 
-​ .footer__address {
+.footer__address {
   padding-top: 56px;
   padding-bottom: 60px;
   margin-left: 160px;
 }
 
-​ .footer__address-1 {
+.footer__address-1 {
   padding-top: 40px;
   align-items: center;
 }
 
-​ .footer__address-2 {
+.footer__address-2 {
   padding-top: 40px;
   align-items: center;
 }
 
-​ .footer__image {
+.footer__image {
   width: 300px;
   height: 310px;
   padding-top: 40px;
