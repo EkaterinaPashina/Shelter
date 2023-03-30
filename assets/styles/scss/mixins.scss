@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+%title_H {
+    letter-spacing: 0.06em;
+}
+
 %title {
     font-family: Georgia;
     font-style: normal;
@@ -20,6 +24,7 @@
 
 @mixin h2 {
     @extend %title;
+    @extend %title_H;
     font-size: 35px;
     line-height: 45px;
     /* line-height: 130%; */
