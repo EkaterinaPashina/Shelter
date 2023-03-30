@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy House</title>
-    <link rel="stylesheet" href="./assets/styles/normalize.css" />
-    <link rel="stylesheet" href="./assets/styles/css/style.css" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
 </head>
 
 <body class="container">
@@ -15,7 +15,8 @@
     <header class="header">
         <div class="navbar">
             <div class="logo">
-                <img src="./assets/images/Logo.png" alt="logo" />
+                <h2 class="logo__title">Cozy House</h2>
+                <h3 class="logo__subtitle">Shelter for pets in Boston</h3>
             </div>
             <nav class="nav">
                 <ul class="nav__menu">
@@ -44,10 +45,11 @@
                 <button class="block-main__btn btn">Make a friend</button>
             </div>
             <div class="block-main__img">
-                <img src="./assets/images/start-screen-puppy.png" alt="Dog" />
+                <img class="block-main__img_bigdog" src="./assets/images/start-screen-puppy.png" alt="Dog" />
             </div>
         </section>
     </header>
+
     <main>
         <!-- первый блок-главная начало -->
         <section class="activity">
@@ -178,33 +180,50 @@
     <!-- футер начало -->
     <footer class="footer">
         <section class="footer__contact">
-            <div class="footer__contact-about">For questions <br> and suggestions</div>
-            <div class="footer__contact-mail">
-                <div class="footer__contant-pic.mail"><img src="assets/images/icon/mail.svg" alt="logo_mail"> </div>
-                <div class="footer__contact_ourmail"><a href="mailto:email@shelter.com">email@shelter.com</a></div>
+            <div class="footer__title">For questions <br> and suggestions</div>
+            <div class="footer__contact-information">
+                <div class="footer__contant-pic.mail">
+                    <img src="assets/images/icon/mail.svg" alt="logo_mail">
+                </div>
+                <div class="footer__information-all">
+                    <a href="mailto:email@shelter.com">email@shelter.com</a>
+                </div>
             </div>
-            <div class="footer__contact-tel">
-                <div class="footer__contant-pic.tel"><img src="assets/images/icon/phone.svg" alt="logo_tel"> </div>
-                <div class="footer__contact_ourtel"><a href="tel:+136745677554"> +13 674 567 75 54</a></div>
+            <div class="footer__contact-information">
+                <div class="footer__contant-pic.tel">
+                    <img src="assets/images/icon/phone.svg" alt="logo_tel">
+                </div>
+                <div class="footer__information-all">
+                    <a href="tel:+136745677554"> +13 674 567 75 54</a>
+                </div>
             </div>
         </section>
 
         <section class="footer__address">
-            <div class="footer__address-about">We are waiting<br>for your visit</div>
-            <div class="footer__address-1">
-                <div class="footer__address-pic.location"><img src="assets/images/icon/pin.svg" alt="logo_location">
-                </div>
-                <div class="footer__address_ouradress1"> <a href="#" target="_blank">1 Central Street, Boston
-                        <br>(entrance from
-                        the store)</a> </div>
+            <div class="footer__title">We are waiting<br>for your visit
             </div>
-            <div class="footer__address-2">
-                <div class="footer__address-pic.location"><img src="assets/images/icon/pin.svg" alt="logo_location">
+            <div class="footer__address-information">
+                <div class="footer__address-pic.location">
+                    <img src="assets/images/icon/pin.svg" alt="logo_location">
                 </div>
-                <div class="footer__address_ouradress2"> <a href="#" target="_blank">18 South Park, London</a> </div>
+                <div class="footer__information-all">
+                    <a href="#" target="_blank">1 Central Street, Boston
+                        <br>(entrance from
+                        the store)</a>
+                </div>
+            </div>
+            <div class="footer__address-information">
+                <div class="footer__address-pic.location">
+                    <img src="assets/images/icon/pin.svg" alt="logo_location">
+                </div>
+                <div class="footer__information-all">
+                    <a href="#" target="_blank">18 South Park, London</a>
+                </div>
             </div>
         </section>
-        <div class="footer__image"> <img src="assets/images/footer-puppy.png" alt="Фото собаки"></div>
+        <div class="footer__image">
+            <img src="assets/images/footer-puppy.png" alt="dog_foto">
+        </div>
     </footer>
     <!-- футер конец -->
 

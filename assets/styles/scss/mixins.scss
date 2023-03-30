@@ -1,6 +1,12 @@
-@mixin center-children {
+@mixin center-center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin center-between {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -25,6 +31,7 @@
 @mixin h2 {
     @extend %title;
     @extend %title_H;
+    color: $color-dark-l;
     font-size: 35px;
     line-height: 45px;
     /* line-height: 130%; */
@@ -32,6 +39,7 @@
 
 @mixin h3 {
     @extend %title;
+    color: $color-dark-l;
     font-size: 20px;
     line-height: 23px;
     /*line-height: 115%;*/
