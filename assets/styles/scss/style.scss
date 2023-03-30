@@ -20,7 +20,6 @@
     background: $bggradient;
     background-size: $bgsize;
     padding: 30px 40px 0 40px;
-    height: 100%;
 }
 
 .navbar {
@@ -78,13 +77,39 @@
 }
 
 .block-main__img {
-    // max-width: 100%;
-    height: auto;
-    display: block;
+    align-items: end;
 }
 
 
 //первый блок-главная начало
+.activity {
+    display: flex;
+    justify-content: center;
+}
+
+h2.activity {
+    font-family: $color-dark-l;
+    @include h2;
+}
+
+.p {
+    font-family: $color-dark-xl;
+    @include p;
+}
+
+.pic {
+    padding: 80px 60px 80px 215px;
+}
+
+.text {
+    width: 33.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 80px 215px 80px 60px;
+}
+}
+
 //первый блок-главная конец
 
 //второй блок-о_нас начало
@@ -94,6 +119,51 @@
 //третий блок-карусель конец
 
 //четвертый  блок-иконки начало
+.icons {
+    background-color: $white;
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.icons__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1030px;
+    column-gap: 120px;
+    row-gap: 55px;
+    margin: 0 auto;
+}
+
+.icons__h2 {
+    @include h2;
+    letter-spacing: 0.06em;
+    max-width: 310px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+
+.item__h3 {
+    @include h3;
+    letter-spacing: 0.06em;
+    padding-top: 25px;
+}
+
+.icons__item {
+    text-align: center;
+}
+
+.item__h3_bowls {
+    padding-top: 28px;
+}
+
+.icons__item_vit-col-position {
+    padding-top: 6px;
+}
+
 //четвертый  блок-иконки конец
 
 
