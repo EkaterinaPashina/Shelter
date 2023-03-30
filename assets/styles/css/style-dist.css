@@ -1,16 +1,21 @@
-.item__h3, .icons__h2, body h2.activity, body .block-main__title {
+@charset "UTF-8";
+.icons__h2, h2.activity {
+  letter-spacing: 0.06em;
+}
+
+.item__h3, .icons__h2, h2.activity, .block-main__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
 }
 
-body .p, body .block-main__subtitle {
+.p, .block-main__subtitle {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
 }
 
-body .block-main__btn {
+.block-main__btn {
   height: 52px;
   padding: 15px 45px;
   border-radius: 100px;
@@ -18,25 +23,29 @@ body .block-main__btn {
   color: #292929;
 }
 
-body * {
+* {
   margin: 0;
   padding: 0;
 }
-body .container {
+
+.container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  border: 1px solid red;
 }
-body .header {
+
+.header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url(/assets/images/footer-gradient-background.svg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   background-size: cover;
   padding: 30px 40px 0 40px;
 }
-body .navbar {
+
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,30 +59,32 @@ body .navbar {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body .nav {
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-body .nav li {
+.nav li {
   display: inline;
 }
-body .nav li a {
+.nav li a {
   color: #CDCDCD;
   text-decoration: none;
   margin-left: 35px;
   color: #CDCDCD;
 }
-body .nav li a:active {
+.nav li a:active {
   border-bottom: #F1CDB3 3px solid;
 }
-body .nav li a:hover {
+.nav li a:hover {
   color: #fafafa;
   border-bottom: #F1CDB3 3px solid;
 }
-body .block-main {
+
+.block-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,43 +95,49 @@ body .block-main {
       -ms-flex-align: center;
           align-items: center;
 }
-body .block-main__text {
+
+.block-main__text {
   color: #fff;
 }
-body .block-main__title {
+
+.block-main__title {
   font-size: 44px;
   line-height: 130%;
   /* or 57px */
 }
-body .block-main__subtitle {
+
+.block-main__subtitle {
   font-size: 15px;
   line-height: 160%;
   /* or 24px */
   color: #CDCDCD;
   padding-bottom: 42px;
 }
-body .block-main__btn {
+
+.block-main__btn {
   background: #F1CDB3;
   border: none;
   cursor: pointer;
 }
-body .block-main__btn:hover {
+.block-main__btn:hover {
   background-color: #FDDCC4;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
-body .block-main__btn:focus {
+.block-main__btn:focus {
   outline-color: transparent;
   outline-style: solid;
   -webkit-box-shadow: 0 0 0 2px #f3c496;
           box-shadow: 0 0 0 2px #f3c496;
 }
-body .block-main__img {
+
+.block-main__img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
 }
-body .activity {
+
+.activity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,22 +145,26 @@ body .activity {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body h2.activity {
+
+h2.activity {
   font-family: #545454;
   font-size: 35px;
   line-height: 45px;
   /* line-height: 130%; */
 }
-body .p {
+
+.p {
   font-family: #4C4C4C;
   font-size: 15px;
   line-height: 160%;
   /* or 24px */
 }
-body .pic {
+
+.pic {
   padding: 80px 60px 80px 215px;
 }
-body .text {
+
+.text {
   width: 33.6%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,7 +178,7 @@ body .text {
   padding: 80px 215px 80px 60px;
 }
 
-.icons {
+​ ​ ​ ​ .icons {
   background-color: #fff;
   width: 1280px;
   margin: 0 auto;
@@ -213,13 +234,17 @@ body .text {
   padding-top: 6px;
 }
 
-.donation {
-  background: #F6F6F6;
+​ ​ .donation {
+  background: #f6f6f6;
 }
+
 .donation__container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 0 auto;
+}
+
+.donation__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,8 +252,9 @@ body .text {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .donation__block_p1 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -244,28 +270,31 @@ body .text {
   /* color-dark-l */
   color: #545454;
 }
+
 .donation__block_img {
   width: 505px;
   height: 261px;
   margin-top: 11px;
 }
+
 .donation__block_title {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-/* or 45px */
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-align: center;
-    -ms-flex-align: center;
-        align-items: center;
-letter-spacing: 0.06em;
-/* color-dark-l */
-color: #545454;
+  /* or 45px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
 }
+
 .search-form {
   border: none;
   width: 349px;
@@ -274,9 +303,10 @@ color: #545454;
   display: -ms-inline-flexbox;
   display: inline-flex;
   /* color-primary */
-  background: #F1CDB3;
+  background: #f1cdb3;
   border-radius: 9px;
 }
+
 .search-form__txt {
   border: none;
   width: 274px;
@@ -284,7 +314,7 @@ color: #545454;
   margin-left: 60px;
   margin-top: 10px;
   outline: none;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -299,18 +329,20 @@ color: #545454;
   letter-spacing: 0.06em;
   /* color-dark-l */
   color: #545454;
-  background: #F1CDB3;
+  background: #f1cdb3;
 }
+
 .search-form__btn {
   border: none;
   width: 30px;
   height: 23px;
   margin-left: 30px;
   margin-top: 10px;
-  background: #F1CDB3;
+  background: #f1cdb3;
 }
+
 .donation__block_p2 {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
@@ -323,7 +355,7 @@ color: #545454;
       -ms-flex-align: center;
           align-items: center;
   /* color-dark-m */
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
 .footer {
