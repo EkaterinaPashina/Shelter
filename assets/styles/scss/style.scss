@@ -121,7 +121,6 @@ h2.activity {
     background-color: $white;
     width: 1280px;
     margin: 0 auto;
-    margin-bottom: 100px;
 }
 
 .icons__line {
@@ -132,11 +131,12 @@ h2.activity {
     column-gap: 120px;
     row-gap: 55px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
-.icons__h2 {
+.icons__title {
     @include h2;
-    letter-spacing: 0.06em;
+    color: $color-dark-l;
     max-width: 310px;
     text-align: center;
     padding-top: 80px;
@@ -144,9 +144,9 @@ h2.activity {
     margin: 0 auto;
 }
 
-.item__h3 {
+.item__subtitle {
     @include h3;
-    letter-spacing: 0.06em;
+    color: $color-dark-l;
     padding-top: 25px;
 }
 
@@ -154,7 +154,7 @@ h2.activity {
     text-align: center;
 }
 
-.item__h3_bowls {
+.item__subtitle_bowls {
     padding-top: 28px;
 }
 

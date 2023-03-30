@@ -1,9 +1,9 @@
 @charset "UTF-8";
-.icons__h2, h2.activity {
+.icons__title, h2.activity {
   letter-spacing: 0.06em;
 }
 
-.item__h3, .icons__h2, h2.activity, .block-main__title {
+.item__subtitle, .icons__title, h2.activity, .block-main__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -182,7 +182,6 @@ h2.activity {
   background-color: #fff;
   width: 1280px;
   margin: 0 auto;
-  margin-bottom: 100px;
 }
 
 .icons__line {
@@ -200,13 +199,14 @@ h2.activity {
           column-gap: 120px;
   row-gap: 55px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
-.icons__h2 {
+.icons__title {
   font-size: 35px;
   line-height: 45px;
   /* line-height: 130%; */
-  letter-spacing: 0.06em;
+  color: #545454;
   max-width: 310px;
   text-align: center;
   padding-top: 80px;
@@ -214,11 +214,11 @@ h2.activity {
   margin: 0 auto;
 }
 
-.item__h3 {
+.item__subtitle {
   font-size: 20px;
   line-height: 23px;
   /*line-height: 115%;*/
-  letter-spacing: 0.06em;
+  color: #545454;
   padding-top: 25px;
 }
 
@@ -226,7 +226,7 @@ h2.activity {
   text-align: center;
 }
 
-.item__h3_bowls {
+.item__subtitle_bowls {
   padding-top: 28px;
 }
 
