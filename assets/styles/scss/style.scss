@@ -7,47 +7,59 @@
 }
 
 .container {
-    box-sizing: border-box;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    border: 1px solid red;
+    box-sizing: border-box;
 }
 
 // heder
 .header {
+
     box-sizing: border-box;
+    width: 100%;
     background: $bggradient;
     background-size: $bgsize;
-    padding: 30px 40px 0 40px;
+    padding: 30px 40px 0;
+}
+
+.logo__title {
+    @extend %title;
+    @extend %title_H;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+    margin-bottom: 10px;
+    color: $color-primary;
+}
+
+.logo__subtitle {
+    @extend %subtitle;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: $white;
 }
 
 .navbar {
-    @include center-children;
-    justify-content: space-between;
+    @include center-between;
 }
 
 .nav {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    @include p;
+    color: $color_l;
 
     li {
         display: inline;
 
         a {
-            color: $color_l;
             text-decoration: none;
             margin-left: 35px;
             color: $color_l;
 
-            &:active {
-                border-bottom: $color-primary 3px solid;
-
-            }
-
+            &:active,
             &:hover {
-                color: $color-light-s;
+                color: $white;
                 border-bottom: $color-primary 3px solid;
             }
         }
@@ -55,15 +67,23 @@
 }
 
 .block-main {
-    @include center-children;
+    display: grid;
+    grid-template-columns: calc(502/1200*100%) calc(698/1200*100%);
+    grid-template-rows: 95.066%;
+    align-items: end;
 }
 
 .block-main__text {
-    color: $white;
+    grid-column: 1/2;
+    align-items: center;
+    max-width: 460px;
 }
 
 .block-main__title {
     @include h1;
+    color: $white;
+    margin-top: 253px;
+    margin-bottom: 42px;
 }
 
 .block-main__subtitle {
@@ -74,10 +94,20 @@
 
 .block-main__btn {
     @include button-bg;
+    margin-bottom: 243px;
 }
 
 .block-main__img {
-    align-items: end;
+    grid-column: 2/3;
+    max-width: 100%;
+    display: flex;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
 
 
@@ -175,6 +205,7 @@
 .donation__container {
     width: 100%;
     max-width: 1280px;
+    max-height: 462px;
     margin: 0 auto;
 }
 
@@ -184,6 +215,8 @@
 }
 
 .donation__block_p1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
@@ -200,7 +233,13 @@
 .donation__block_img {
     width: 505px;
     height: 261px;
-    margin-top: 11px;
+    margin: 91px 30px 110px 183px;
+}
+
+.donation__block_text {
+    width: 380px;
+    height: 282px;
+    margin: 80px 182px 100px 0px;
 }
 
 .donation__block_title {
@@ -231,7 +270,7 @@
     border: none;
     width: 274px;
     height: 23px;
-    margin-left: 60px;
+    margin-left: 55px;
     margin-top: 10px;
     outline: none;
     font-family: "Georgia";
@@ -258,6 +297,7 @@
 }
 
 .donation__block_p2 {
+    margin-top: 20px;
     font-family: "Arial";
     font-style: italic;
     font-weight: 400;
@@ -275,6 +315,9 @@
 // НЕ ТРОГАТЬ!!!!!!!!!!!
 //  картинка для модального окна набросок
 
+.description {
+    display: none;
+}
 
 // ФУТЕР
 .footer {
@@ -282,7 +325,6 @@
     box-sizing: border-box;
     background: $bggradient;
     background-size: $bgsize;
-    font-family: Georgia;
     display: flex;
     justify-content: space-between;
 
@@ -296,67 +338,38 @@
     }
 }
 
-.footer__contact {
-    padding-left: 40px;
+.footer__contact,
+.footer__address {
     padding-top: 56px;
     padding-bottom: 60px;
 }
 
-.footer__contact,
-.footer__address {
+.footer__contact {
+    padding-left: 40px;
+}
+
+.footer__title {
+    @include h2;
     color: $white;
 }
 
-.footer__contact-about,
-.footer__address-about {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-}
-
-.footer__contact-mail {
-    padding-top: 43px;
-    align-items: center;
-}
-
-.footer__contact-tel {
-    padding-top: 43px;
-    align-items: center;
-}
-
-.footer__contact-mail,
-.footer__contact-tel,
-.footer__address-1,
-.footer__address-2 {
+.footer__contact-information,
+.footer__address-information {
     display: flex;
+    align-items: center;
 }
 
-.footer__contact_ourmail,
-.footer__contact_ourtel,
-.footer__address_ouradress1,
-.footer__address_ouradress2 {
+.footer__contact-information {
+    padding-top: 43px;
+}
+
+.footer__address-information {
+    padding-top: 40px;
+}
+
+.footer__information-all {
+    @include h3;
     padding-left: 20px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 115%;
-}
-
-.footer__address {
-    padding-top: 56px;
-    padding-bottom: 60px;
-    margin-left: 160px;
-}
-
-.footer__address-1 {
-    padding-top: 40px;
-    align-items: center;
-}
-
-.footer__address-2 {
-    padding-top: 40px;
-    align-items: center;
 }
 
 .footer__image {

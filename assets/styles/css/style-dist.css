@@ -254,6 +254,7 @@
 .donation__container {
   width: 100%;
   max-width: 1280px;
+  max-height: 462px;
   margin: 0 auto;
 }
 
@@ -267,6 +268,8 @@
 }
 
 .donation__block_p1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -287,7 +290,13 @@
 .donation__block_img {
   width: 505px;
   height: 261px;
-  margin-top: 11px;
+  margin: 91px 30px 110px 183px;
+}
+
+.donation__block_text {
+  width: 380px;
+  height: 282px;
+  margin: 80px 182px 100px 0px;
 }
 
 .donation__block_title {
@@ -324,7 +333,7 @@
   border: none;
   width: 274px;
   height: 23px;
-  margin-left: 60px;
+  margin-left: 55px;
   margin-top: 10px;
   outline: none;
   font-family: "Georgia";
@@ -355,6 +364,7 @@
 }
 
 .donation__block_p2 {
+  margin-top: 20px;
   font-family: "Arial";
   font-style: italic;
   font-weight: 400;
