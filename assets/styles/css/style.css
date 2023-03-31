@@ -1,15 +1,15 @@
 @charset "UTF-8";
-.footer__title, .icons__title, h2.activity, .logo__title {
+.footer__title, .icons__title, .activity__title, .logo__title {
   letter-spacing: 0.06em;
 }
 
-.footer__information-all, .footer__title, .item__subtitle, .icons__title, h2.activity, .block-main__title, .logo__title {
+.footer__information-all, .footer__title, .item__subtitle, .icons__title, .activity__title, .block-main__title, .logo__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
 }
 
-.p, .block-main__subtitle, .nav, .logo__subtitle {
+.activity__subtitle, .block-main__subtitle, .nav, .logo__subtitle {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -180,45 +180,58 @@
 }
 
 .activity {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: -webkit-max-content;
+  -ms-grid-rows: max-content;
+  grid-template-rows: -webkit-max-content;
+  grid-template-rows: max-content;
 }
 
-h2.activity {
-  font-family: #545454;
+.activity > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.activity > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.activity__title {
   color: #545454;
   font-size: 35px;
   line-height: 45px;
   /* line-height: 130%; */
+  color: #545454;
+  line-height: 160%;
 }
 
-.p {
-  font-family: #4C4C4C;
+.activity__subtitle {
   font-size: 15px;
   line-height: 160%;
   /* or 24px */
+  color: #4C4C4C;
 }
 
 .pic {
-  padding: 80px 60px 80px 215px;
+  max-width: 300px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin: 80px 20% 100px 0;
 }
 
 .text {
-  width: 33.6%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 80px 215px 80px 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 430px);
+  grid-template-columns: minmax(300px, 430px);
+  gap: 25px;
 }
 
 ​ ​ ​ ​ .icons {
