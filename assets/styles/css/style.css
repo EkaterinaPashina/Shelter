@@ -1,9 +1,9 @@
 @charset "UTF-8";
-.footer__title, .icons__title, .activity__title, .logo__title {
+.footer__title, .donation__block_title, .donation__block_p1, .icons__title, .activity__title, .logo__title {
   letter-spacing: 0.06em;
 }
 
-.footer__information-all, .footer__title, .item__subtitle, .icons__title, .activity__title, .block-main__title, .logo__title {
+.footer__information-all, .footer__title, .search-form__txt, .donation__block_title, .donation__block_p1, .item__subtitle, .icons__title, .activity__title, .block-main__title, .logo__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -310,26 +310,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .donation__block_p1 {
+  color: #545454;
+  font-size: 15px;
+  line-height: 17px;
+  /*line-height: 110%;*/
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 110%;
-  /* identical to box height, or 17px */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.06em;
-  /* color-dark-l */
-  color: #545454;
 }
 
 .donation__block_img {
@@ -345,21 +343,16 @@
 }
 
 .donation__block_title {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
+  color: #545454;
   font-size: 35px;
-  line-height: 130%;
-  /* or 45px */
+  line-height: 45px;
+  /* line-height: 130%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.06em;
-  /* color-dark-l */
-  color: #545454;
 }
 
 .search-form {
@@ -375,27 +368,25 @@
 }
 
 .search-form__txt {
+  color: #545454;
+  font-size: 20px;
+  line-height: 23px;
+  /*line-height: 115%;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   width: 274px;
   height: 23px;
   margin-left: 55px;
   margin-top: 10px;
   outline: none;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  /* identical to box height, or 23px */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.06em;
-  /* color-dark-l */
-  color: #545454;
   background: #f1cdb3;
 }
 
@@ -409,6 +400,15 @@
 }
 
 .donation__block_p2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
   font-family: "Arial";
   font-style: italic;
@@ -416,14 +416,8 @@
   font-size: 12px;
   line-height: 18px;
   /* or 150% */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* color-dark-m */
   color: #b2b2b2;
+  /* color-dark-m */
 }
 
 .description {
