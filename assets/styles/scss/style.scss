@@ -83,30 +83,33 @@
 
 //первый блок-главная начало
 .activity {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
 }
 
-h2.activity {
-    font-family: $color-dark-l;
-    @include h2;
+.activity__title {
+    @include h2; 
+    color: $color-dark-l;
+    line-height: 160%;
 }
 
-.p {
-    font-family: $color-dark-xl;
-    @include p;
+.activity__subtitle {
+    @include p; 
+    color: $color-dark-xl; 
 }
 
 .pic {
-    padding: 80px 60px 80px 215px;
+    max-width: 300px;
+    justify-self: end;
+    margin: 80px 20% 100px 0;
 }
 
 .text {
-    width: 33.6%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 80px 215px 80px 60px;
+    display: grid;
+    grid-template-columns: minmax(300px,430px) ;
+    gap: 25px ;
 }
 
 
