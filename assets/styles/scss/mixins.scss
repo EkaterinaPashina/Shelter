@@ -45,6 +45,15 @@
     /*line-height: 115%;*/
 }
 
+@mixin h4 {
+    @extend %title;
+    @extend %title_H;
+    color: $color-dark-l;
+    font-size: 15px;
+    line-height: 17px;
+    /*line-height: 110%;*/
+}
+
 %subtitle {
     font-family: 'Arial';
     font-style: normal;

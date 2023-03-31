@@ -192,8 +192,8 @@ h2.activity {
     padding-top: 6px;
 }
 
-​ //четвертый  блок-иконки конец
-​ //пятый блок-финпомощь
+​//четвертый  блок-иконки конец
+​//пятый блок-финпомощь
 
 .donation {
     background: #f6f6f6;
@@ -207,24 +207,15 @@ h2.activity {
 }
 
 .donation__block {
-    display: flex;
-    justify-content: center;
+    @include center-center;
 }
 
 .donation__block_p1 {
+    @include h4;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 110%;
-    /* identical to box height, or 17px */
     display: flex;
     align-items: center;
-    letter-spacing: 0.06em;
-    /* color-dark-l */
-    color: #545454;
 }
 
 .donation__block_img {
@@ -240,17 +231,9 @@ h2.activity {
 }
 
 .donation__block_title {
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 130%;
-    /* or 45px */
+    @include h2;
     display: flex;
     align-items: center;
-    letter-spacing: 0.06em;
-    /* color-dark-l */
-    color: #545454;
 }
 
 .search-form {
@@ -264,23 +247,14 @@ h2.activity {
 }
 
 .search-form__txt {
+    @include h3;
+    @include center-center;
     border: none;
     width: 274px;
     height: 23px;
     margin-left: 55px;
     margin-top: 10px;
     outline: none;
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 115%;
-    /* identical to box height, or 23px */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.06em;
-    /* color-dark-l */
-    color: #545454;
     background: #f1cdb3;
 }
 
@@ -294,6 +268,7 @@ h2.activity {
 }
 
 .donation__block_p2 {
+    @include center-center;
     margin-top: 20px;
     font-family: "Arial";
     font-style: italic;
@@ -301,10 +276,8 @@ h2.activity {
     font-size: 12px;
     line-height: 18px;
     /* or 150% */
-    display: flex;
-    align-items: center;
-    /* color-dark-m */
     color: #b2b2b2;
+    /* color-dark-m */
 }
 
 //пятый блок-финпомощь конец
