@@ -115,3 +115,10 @@
     }
 
 }
+@mixin h2-mobile {
+    @extend %title;
+    @extend %title_H;
+    color: $color-dark-l;
+    line-height: 32.5px;
+    font-size: 25px;
+}
