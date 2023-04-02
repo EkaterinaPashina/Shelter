@@ -117,10 +117,12 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 .activity {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
+
     @media (max-width:$tablet) {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -129,6 +131,7 @@
         padding-top: 80px;
         padding-bottom: 100px;
     }
+
     @media (max-width:$mobile) {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -138,19 +141,23 @@
         justify-items: center;
         border: 1px solid rgb(17, 3, 44);
     }
-    
+
 }
+
 .activity__title {
-    @include h2; 
+    @include h2;
     color: $color-dark-l;
+
     @media (max-width:$mobile) {
         @include h2-mobile;
     }
 }
+
 .activity__subtitle {
-    @include p; 
+    @include p;
     color: $color-dark-xl;
 }
+
 .activity__pic {
     max-width: 300px;
     max-height: 408px;
@@ -158,40 +165,47 @@
     padding-top: 80px;
     padding-bottom: 100px;
     padding-right: 18.8%;
+
     @media (max-width:$tablet) {
         order: 1;
         justify-self: center;
-        padding: 0;    
+        padding: 0;
     }
+
     @media (max-width:$mobile) {
-        order: 1;       
+        order: 1;
     }
-    
+
 }
+
 .activity__pic img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+
     @media (max-width:$tablet) {
         justify-self: center;
         padding: 0;
     }
-    @media (max-width:$mobile){
+
+    @media (max-width:$mobile) {
         justify-self: center;
         padding: 0;
     }
 }
+
 .activity__text {
     display: grid;
-    grid-template-columns: minmax(300px,430px) ;
-    gap: 25px ;
+    grid-template-columns: minmax(300px, 430px);
+    gap: 25px;
+
     @media (max-width:$mobile) {
         justify-items: center;
-        grid-template-columns: minmax(270px,300px) ;
+        grid-template-columns: minmax(270px, 300px);
     }
 }
 
- //первый блок-главная конец
+//первый блок-главная конец
 ​ //второй блок-о_нас начало
 //второй блок-о_нас конец
 ​ //третий блок-карусель начало
@@ -211,8 +225,8 @@
     max-width: 1030px;
     column-gap: 120px;
     row-gap: 55px;
+    padding-bottom: 100px;
     margin: 0 auto;
-    margin-bottom: 100px;
 }
 
 .icons__title {
@@ -243,8 +257,55 @@
     padding-top: 6px;
 }
 
-​//четвертый  блок-иконки конец
-​//пятый блок-финпомощь
+@media (max-width:$big-tablet) {
+    .icons__line {
+        padding-left: 69px;
+        padding-right: 69px;
+        justify-content: space-between;
+        column-gap: 60px;
+    }
+
+    .icons__item {
+        width: 170px;
+    }
+}
+
+@media (max-width:$tablet) {
+    .icons__line {
+        width: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: start;
+        column-gap: 30px;
+        row-gap: 30px;
+        column-gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .icons__item {
+        width: 130px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .item__subtitle {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    .icons__title {
+        font-size: 25px;
+        line-height: 32px;
+        max-width: 224px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 42px;
+    }
+}
+
+​ //четвертый  блок-иконки конец
+​ //пятый блок-финпомощь
 
 .donation {
     background: #f6f6f6;

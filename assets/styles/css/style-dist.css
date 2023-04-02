@@ -334,8 +334,8 @@
      -moz-column-gap: 120px;
           column-gap: 120px;
   row-gap: 55px;
+  padding-bottom: 100px;
   margin: 0 auto;
-  margin-bottom: 100px;
 }
 
 .icons__title {
@@ -372,6 +372,57 @@
   padding-top: 6px;
 }
 
+@media (max-width: 1025px) {
+  .icons__line {
+    padding-left: 69px;
+    padding-right: 69px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
+  }
+  .icons__item {
+    width: 170px;
+  }
+}
+@media (max-width: 768px) {
+  .icons__line {
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 30px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .icons__item {
+    width: 130px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .item__subtitle {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  .icons__title {
+    font-size: 25px;
+    line-height: 32px;
+    max-width: 224px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 42px;
+  }
+}
 ​ ​ .donation {
   background: #f6f6f6;
 }
