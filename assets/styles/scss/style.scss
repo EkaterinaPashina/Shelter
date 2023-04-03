@@ -320,6 +320,7 @@
 
 .donation__block {
     @include center-center;
+    flex-wrap: wrap;
 }
 
 .donation__block_p1 {
@@ -395,9 +396,34 @@
 
 }
 @media (max-width:$tablet) {
+    .donation__container {
+        width: 100%;
+        max-width: 768px;
+        max-height: 783px;
+        margin: 0 auto;
+    }
     .donation__block {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        flex-direction: column-reverse; 
+
+    }
+    
+    
+    .donation__block_img {
+        width: 505px;
+        height: 261px;
+        margin: 80px 131px 100px 132px;
+        flex-basis: 50%;
+    }
+    
+    .donation__block_text {
+        width: 380px;
+        height: 282px;
+        margin: 80px 194px 60px 194px;
+        flex-basis: 50%;
     }
 }
 @media (max-width:$mobile) {
