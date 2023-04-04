@@ -2,39 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy House</title>
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
-<body class="container">
-    <!-- ОБЯЗАТЕЛЬНО <a href="#" target="_blank"></a> -->
+<body>
     <header class="header">
         <div class="navbar">
             <div class="logo">
                 <h2 class="logo__title">Cozy House</h2>
                 <h3 class="logo__subtitle">Shelter for pets in Boston</h3>
             </div>
+            <input class="switcher" id="menu" type="checkbox">
+            <label class="open" for="menu">
+                <i class="fa fa-bars"></i>
+            </label>
             <nav class="nav">
                 <ul class="nav__menu">
                     <li class="nav__item">
                         <a href="#" target="_blank">About the shelter</a>
                     </li>
-                    <li class="nav__item"><a href="#" target="_blank">Our pets</a></li>
+                    <li class="nav__item">
+                        <a href="#" target="_blank">Our pets</a></li>
                     <li class="nav__item">
                         <a href="#" target="_blank">Help the shelter</a>
                     </li>
-                    <li class="nav__item"><a href="#" target="_blank">Contacts</a></li>
+                    <li class="nav__item">
+                        <a href="#" target="_blank">Contacts</a>
+                    </li>
                 </ul>
+                <label class="close" for="menu">
+                    <i class="fa fa-bars fa-rotate-90 "></i>
+                </label>
             </nav>
+
         </div>
         <section class="block-main block">
             <div class="block-main__text">
                 <h1 class="block-main__title">
-                    Not only people<br />
+                    Not only people<br>
                     need a house
                 </h1>
                 <p class="block-main__subtitle">
@@ -45,20 +57,19 @@
                 <button class="block-main__btn btn">Make a friend</button>
             </div>
             <div class="block-main__img">
-                <img class="block-main__img_bigdog" src="./assets/images/start-screen-puppy.png" alt="Dog" />
+                <img class="block-main__img_bigdog" src="./assets/images/start-screen-puppy.png" alt="Dog">
             </div>
         </section>
     </header>
 
     <main>
-        <!-- первый блок-главная начало -->
         <section class="container">
             <div class="activity">
                 <picture class="activity__pic">
                     <source srcset="./assets/images/about-pets-small.png" type="images/png" media="(max-width:320px)">
                     <source srcset="./assets/images/about-pets-middle.png" type="images/png" media="(min-width:320px)">
                     <source srcset="./assets/images/about-pets-big.png" type="images/png" media="(min-width:1025px)">
-                    <img src="./assets/images/about-pets-big.png" alt="dog and cat" />
+                    <img src="./assets/images/about-pets-big.png" alt="dog and cat">
                 </picture>
                 <div class="activity__text">
                     <h2 class="activity__title">About the shelter <br> “Cozy House”</h2>
@@ -79,19 +90,8 @@
                 </div>
             </div>
         </section>
-        <!-- первый блок-главная конец -->
-
-        <!-- первый блок-главная начало -->
-        <!-- первый блок-главная конец -->
-
-        <!-- второй блок-о_нас начало -->
-        <!-- второй блок-о_нас конец -->
-
-        <!-- третий блок-карусель начало -->
-        <!-- третий блок-карусель конец -->
-
-        <!-- четвертый  блок-иконки начало -->
-        <div class="icons">
+        <!-- иконки Екатерины -->
+        <section class="icons">
             <h2 class="icons__title">How you can help our shelter</h2>
             <div class="icons__line">
                 <div class="icons__item">
@@ -158,9 +158,8 @@
                     <h3 class="item__subtitle">Sleeping areas</h3>
                 </div>
             </div>
-        </div>
-        <!-- четвертый  блок-иконки конец -->
-
+        </section>
+        <!-- иконки Екатерины -->
         <!-- пятый блок-финпомощь начало -->
         <section class="donation">
             <div class="donation__container">
@@ -188,28 +187,7 @@
         </section>
 
         <!-- пятый блок-финпомощь конец -->
-        <!-- модальное окно карточка -->
-
-        <div class="description">
-            <img class="description__img" src="./assets/images/pets-jennifer.png" alt="jennifer">
-            <div class="description__text">
-                <h2 class="description__title">Jennifer</h2>
-                <h3 class="description__subtitle">Dog - Labrador</h3>
-                <p class="description__paragraf">Jennifer is a sweet 2 months old Labrador that is patiently waiting
-                    to find a new forever home. This
-                    girl really enjoys being able to go outside to run and play, but won't hesitate to play up a
-                    storm
-                    in the house if she has all of her favorite toys.
-                </p>
-                <ul class="description__list">
-                    <li>Age: 2 months</li>
-                    <li>Inoculations: none</li>
-                    <li>Diseases: none</li>
-                    <li>Parasites: none</li>
-                </ul>
-            </div>
     </main>
-    <!-- футер начало -->
     <footer class="footer">
         <section class="footer__contact">
             <div class="footer__title">For questions <br> and suggestions</div>
@@ -257,8 +235,6 @@
             <img src="assets/images/footer-puppy.png" alt="dog_foto">
         </div>
     </footer>
-    <!-- футер конец -->
-
 </body>
 
 </html>

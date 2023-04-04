@@ -1,0 +1,46 @@
+@media (max-width:$big-tablet) {
+    .icons__line {
+        padding-left: 69px;
+        padding-right: 69px;
+        justify-content: space-between;
+        column-gap: 60px;
+    }
+
+    .icons__item {
+        width: 170px;
+    }
+}
+
+@media (max-width:$tablet) {
+    .icons__line {
+        width: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: start;
+        column-gap: 30px;
+        row-gap: 30px;
+        column-gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .icons__item {
+        width: 130px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .item__subtitle {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    .icons__title {
+        font-size: 25px;
+        line-height: 32px;
+        max-width: 224px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 42px;
+    }
+}

@@ -1,0 +1,85 @@
+.donation {
+    background: #f6f6f6;
+}
+
+.donation__container {
+    width: 100%;
+    max-width: 1280px;
+    min-height: 462px;
+    margin: 0 auto;
+}
+
+.donation__block {
+    @include center-center;
+    flex-wrap: wrap;
+}
+
+.donation__block_p1 {
+    @include h4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.donation__block_img {
+    width: 505px;
+    height: 261px;
+    margin: 91px 30px 110px 183px;
+}
+
+.donation__block_text {
+    width: 380px;
+    height: 282px;
+    margin: 80px 182px 100px 0px;
+}
+
+.donation__block_title {
+    @include h2;
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    border: none;
+    width: 349px;
+    height: 43px;
+    display: inline-flex;
+    /* color-primary */
+    background: $color-primary;
+    border-radius: 9px;
+}
+
+.search-form__txt {
+    @include h3;
+    @include center-center;
+    border: none;
+    width: 274px;
+    height: 23px;
+    margin-left: 55px;
+    margin-top: 10px;
+    outline: none;
+    background: $color-primary;
+}
+
+.search-form__btn {
+    border: none;
+    width: 30px;
+    height: 23px;
+    margin-left: 30px;
+    margin-top: 10px;
+    background: $color-primary;
+}
+
+.donation__block_p2 {
+    @include center-center;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    margin-top: 20px;
+    color: $color-dark-m;
+    /* color-dark-m */
+}
+
+// цвета я поставила переменными, ты умничка

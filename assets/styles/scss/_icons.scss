@@ -1,0 +1,42 @@
+.icons {
+    background-color: $color-light-xl;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.icons__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1030px;
+    column-gap: 120px;
+    row-gap: 55px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+.icons__title {
+    @include h2;
+    max-width: 310px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+
+.item__subtitle {
+    @include h3;
+    padding-top: 25px;
+}
+
+.icons__item {
+    text-align: center;
+}
+
+.item__subtitle_bowls {
+    padding-top: 28px;
+}
+
+.icons__item_vit-col-position {
+    padding-top: 6px;
+}

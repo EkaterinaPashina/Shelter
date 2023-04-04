@@ -1,0 +1,41 @@
+@media screen and (max-width:767px) {
+
+    .open,
+    .close {
+        display: block;
+        max-width: 320px;
+        color: $color-primary;
+    }
+
+    .close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .switcher:checked~.nav {
+        right: 0;
+    }
+
+    .nav {
+        position: fixed;
+        width: 320px;
+        height: 100vh;
+        background: $color-dark-3xl;
+        top: 0;
+        right: -100%;
+        font-size: 30px;
+        text-align: center;
+        padding: 100px 0;
+        transition: .7s;
+
+        ul {
+            flex-direction: column;
+
+            a {
+                padding: 20px;
+                // flex-direction: column;
+            }
+        }
+    }
+}

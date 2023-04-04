@@ -46,18 +46,12 @@
 }
 
 @mixin h4 {
-    @include h2;
-    font-size: 15px;
-    line-height: 17px;
-    /*line-height: 110%;*/
-}
-
-@mixin h2-mobile {
     @extend %title;
     @extend %title_H;
     color: $color-dark-l;
-    line-height: 32.5px;
-    font-size: 25px;
+    font-size: 15px;
+    line-height: 17px;
+    /*line-height: 110%;*/
 }
 
 %subtitle {
@@ -120,4 +114,12 @@
         box-shadow: 0 0 0 2px black;
     }
 
+}
+
+@mixin h2-mobile {
+    @extend %title;
+    @extend %title_H;
+    color: $color-dark-l;
+    line-height: 32.5px;
+    font-size: 25px;
 }
