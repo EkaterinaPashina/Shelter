@@ -13,7 +13,7 @@
     @include center-center;
 }
 
-.donation__block_p1 {
+.donation__block-bank {
     @include h4;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -21,25 +21,25 @@
     align-items: center;
 }
 
-.donation__block_img {
+.donation__block-img {
     width: 505px;
     height: 261px;
     margin: 91px 30px 110px 183px;
 }
 
-.donation__block_text {
+.donation__block-text {
     width: 380px;
     height: 282px;
     margin: 80px 182px 100px 0px;
 }
 
-.donation__block_title {
+.donation__block-title {
     @include h2;
     display: flex;
     align-items: center;
 }
 
-.search-form {
+.donation__search-form {
     border: none;
     width: 349px;
     height: 43px;
@@ -49,7 +49,7 @@
     border-radius: 9px;
 }
 
-.search-form__txt {
+.donation__search-txt {
     @include h3;
     @include center-center;
     border: none;
@@ -61,7 +61,7 @@
     background: $color-primary;
 }
 
-.search-form__btn {
+.donation__search-btn {
     border: none;
     width: 30px;
     height: 23px;
@@ -70,7 +70,7 @@
     background: $color-primary;
 }
 
-.donation__block_p2 {
+.donation__block-legal {
     @include center-center;
     font-style: italic;
     font-size: 12px;
