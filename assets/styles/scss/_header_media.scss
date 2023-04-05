@@ -1,4 +1,9 @@
 @media screen and (max-width:767px) {
+    .header {
+        width: 100%;
+        height: auto;
+        padding: 30px 30px 0;
+    }
 
     .open,
     .close {
@@ -20,7 +25,7 @@
     .nav {
         position: fixed;
         width: 320px;
-        height: 100vh;
+        height: 100%;
         background: $color-dark-3xl;
         top: 0;
         right: -100%;
@@ -29,13 +34,51 @@
         padding: 100px 0;
         transition: .7s;
 
-        ul {
+        .nav__menu {
             flex-direction: column;
 
             a {
                 padding: 20px;
-                // flex-direction: column;
             }
         }
+    }
+
+    .block-main {
+        // display: grid;
+        // grid-template-columns: auto;
+        // grid-template-rows: repeat(2, auto);
+        // align-items: end;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-main__text {
+        // grid-column: 1/1;
+        // grid-row: 1/2;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .block-main__img {
+        // grid-column: 1/1;
+        // grid-row: 2/3;
+        // display: flex;
+        // align-self: flex-start;
+        width: 100%;
+        // display: flex;
+        vertical-align: middle;
+        // margin-top: 100px;
+
+        margin-right: 0;
+        margin-bottom: 0;
+
+    }
+
+    img {
+        box-sizing: border-box;
+        margin-top: 100px;
+        overflow: hidden;
+        width: 100%;
+
     }
 }
