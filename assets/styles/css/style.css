@@ -42,7 +42,7 @@
 }
 
 .footer__information-all, .footer__title, .search-form__txt, .donation__block_title, .donation__block_p1, .item__subtitle, .icons__title, .activity__title, .block-main__title, .logo__title {
-  font-family: Georgia;
+  /* font-family: Georgia; */
   font-style: normal;
   font-weight: 400;
 }
