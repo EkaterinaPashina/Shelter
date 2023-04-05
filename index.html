@@ -189,7 +189,7 @@
         <!-- пятый блок-финпомощь конец -->
     </main>
     <footer class="footer">
-        <section class="footer__contact">
+        <div class="footer__contact">
             <div class="footer__title">For questions <br> and suggestions</div>
             <div class="footer__contact-information">
                 <div class="footer__contant-pic.mail">
@@ -207,9 +207,9 @@
                     <a href="tel:+136745677554"> +13 674 567 75 54</a>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="footer__address">
+        <div class="footer__address">
             <div class="footer__title">We are waiting<br>for your visit
             </div>
             <div class="footer__address-information">
@@ -230,11 +230,16 @@
                     <a href="#" target="_blank">18 South Park, London</a>
                 </div>
             </div>
-        </section>
+        </div>
         <div class="footer__image">
-            <img src="assets/images/footer-puppy.png" alt="dog_foto">
+            <picture>
+                <source srcset="./assets/images/footer-puppy-middle.png" media="(max-width:1025px)">
+                <source srcset="./assets/images/footer-puppy-small.png" media="(max-width:320px)">
+                <img src="./assets/images/footer-puppy.png" alt="dog_foto">
+            </picture>
         </div>
     </footer>
+
 </body>
 
 </html>
