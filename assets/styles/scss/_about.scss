@@ -8,22 +8,22 @@
     box-sizing: border-box;
 }
 
-.block-activity {
+.about-content {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50vw 50vw;
 }
 
-.block-activity__title {
+.title-h2 {
     @include h2;
 }
 
-.block-activity__subtitle {
+.paragraph {
     @include p;
     color: $color-dark-xl;
 }
 
-.block-activity__pic {
+.about-content__pic {
     max-width: 300px;
     max-height: 408px;
     justify-self: end;
@@ -32,13 +32,13 @@
     padding-right: 18.8%;
 }
 
-.block-activity__pic img {
+.about-content__pic img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
-.block-activity__text {
+.about-content__text {
     display: grid;
     grid-template-columns: minmax(300px, 430px);
     grid-template-rows: auto;
