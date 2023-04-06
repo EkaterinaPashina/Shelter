@@ -10,17 +10,15 @@
     box-sizing: border-box;
 }
 
-
-
 @import "variables";
 @import "mixins";
 @import "_header";
-@import "_firstsection";
-@import "_icons";
+@import "_about";
+@import "_help";
 @import "_donation";
 @import "_footer";
-@import "_header_media";
-// @import "_firstsectionmedia";
-@import "_iconsmedia";
-//@import "_donation-media";
-@import "_footermedia";
+@import "_header-media";
+@import "_about-media";
+@import "_help-media";
+@import "_donation-media";
+@import "_footer-media";
