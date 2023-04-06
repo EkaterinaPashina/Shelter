@@ -2,10 +2,8 @@
 
 @media (max-width:$tablet) {
     .donation__container {
-        width: 100%;
         max-width: 768px;
         max-height: 783px;
-        margin: 0 auto;
     }
 
     .donation__block {
@@ -15,35 +13,21 @@
     }
 
 
-    .donation__block_img {
-        width: 505px;
-        height: 261px;
+    .donation__block-img {
         margin: 80px 131px 100px 132px;
         flex-basis: 50%;
     }
 
-    .donation__block_text {
-        width: 380px;
-        height: 282px;
+    .donation__block-text {
         margin: 80px 194px 60px 194px;
         flex-basis: 50%;
     }
-
-    .donation__block_title {
-        @include h2;
-        display: flex;
-        align-items: center;
-    }
-
 }
-
 
 @media (max-width:$mobile) {
     .donation__container {
-        width: 100%;
         max-width: 320px;
         max-height: 542.2px;
-        margin: 0 auto;
     }
 
     .donation__block {
@@ -54,75 +38,49 @@
     }
 
     .donation__block_img {
-        width: 260px;
-        height: 135.2px;
-        margin: 42px 30px;
-        flex-basis: 50%;
-        margin: 0 auto;
-    }
+        .donation__block-img {
+            width: 260px;
+            height: 135.2px;
+            margin: 42px 30px;
+            flex-basis: 50%;
+        }
 
-    .donation__block_text {
-        width: 300px;
-        height: 281px;
-        margin: 42px 10px;
-        flex-basis: 50%;
-        margin: 0 auto;
-    }
+        .donation__block_text {
+            .donation__block-text {
+                width: 300px;
+                height: 281px;
+                margin: 42px 10px;
+                flex-basis: 50%;
+            }
 
-    .donation__block_title {
-        @include h2-mobile;
-        display: flex;
-        align-items: center;
-    }
+            .donation__block-bank {
+                font-size: 15px;
+                line-height: 160%;
+            }
 
-    .donation__block_p1 {
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+            .search-form {
+                border: none;
 
-    .search-form {
-        border: none;
-        width: 281px;
-        height: 43px;
-        display: inline-flex;
-        /* color-primary */
-        background: $color-primary;
-        border-radius: 9px;
-    }
+                .donation__search-form {
+                    width: 281px;
+                    height: 43px;
+                }
 
-    .search-form__txt {
-        @include center-center;
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        border: none;
-        width: 206px;
-        height: 17px;
-        margin-left: 55px;
-        margin-top: 10px;
-        outline: none;
-        background: $color-primary;
-        letter-spacing: 0.06em;
-    }
+                .search-form__txt {
+                    .donation__search-txt {
+                        @include center-center;
+                        font-size: 15px;
+                        width: 206px;
+                        height: 17px;
+                        letter-spacing: 0.06em;
+                    }
 
-    .donation__block_p2 {
-        @include center-center;
-        font-family: Arial;
-        font-style: italic;
-        font-weight: 400px;
-        font-size: 12px;
-        line-height: 18px;
-        text-align: justify;
-        /* or 150% */
-        margin-top: 20px;
-        color: $color-dark-m;
-        /* color-dark-m */
-    }
+                    .donation__block_p2 {
+                        @include center-center;
 
-}
+                        .donation__block-legal {
+                            font-family: Arial;
+                            font-weight: 400px;
+                        }
+
+                    }
