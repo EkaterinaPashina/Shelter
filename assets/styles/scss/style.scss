@@ -10,6 +10,8 @@
     box-sizing: border-box;
 }
 
+
+
 @import "variables";
 @import "mixins";
 @import "_header";
@@ -17,8 +19,18 @@
 @import "_icons";
 @import "_donation";
 @import "_footer";
+
+// @media screen and (max-width:767px) {
+//     .container {
+//         width: 100%;
+//         max-width: 767px;
+//         margin: 0 auto;
+//         box-sizing: border-box;
+//     }
+// }
+
 @import "_header_media";
 // @import "_firstsectionmedia";
 @import "_iconsmedia";
-@import "_donation-media";
+// @import "_donation-media";
 @import "_footermedia";

@@ -35,7 +35,7 @@
     color: $color-dark-l;
 
     @media (max-width:$mobile) {
-        @include h2-mobile;
+        // @include h2-mobile;
     }
 }
 
