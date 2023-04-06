@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozy House</title>
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
 
 <body class="container">
@@ -178,11 +178,12 @@
                             <input class="search-form__txt" type="text" placeholder="Your number card">
                         </div>
 
-                        <p class="donation__block_p2">Legal information and lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Maecenas a
-                            ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
-                            vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
+                        <p class="donation__block_p2">
+                            Legal information and lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
+                            sed ac diam. Praesent ultrices maximus tortor et vulputate.
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -191,7 +192,7 @@
         <!-- пятый блок-финпомощь конец -->
     </main>
     <footer class="footer">
-        <section class="footer__contact">
+        <div class="footer__contact">
             <div class="footer__title">For questions <br> and suggestions</div>
             <div class="footer__contact-information">
                 <div class="footer__contant-pic.mail">
@@ -209,9 +210,9 @@
                     <a href="tel:+136745677554"> +13 674 567 75 54</a>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="footer__address">
+        <div class="footer__address">
             <div class="footer__title">We are waiting<br>for your visit
             </div>
             <div class="footer__address-information">
@@ -232,11 +233,41 @@
                     <a href="#" target="_blank">18 South Park, London</a>
                 </div>
             </div>
-        </section>
+        </div>
         <div class="footer__image">
-            <img src="assets/images/footer-puppy.png" alt="dog_foto">
+            <picture>
+                <source srcset="./assets/images/footer-puppy-middle.png" media="(max-width:1025px)">
+                <source srcset="./assets/images/footer-puppy-small.png" media="(max-width:320px)">
+                <img src="./assets/images/footer-puppy.png" alt="dog_foto">
+            </picture>
         </div>
     </footer>
+
+</body>
+
+<section class="footer__address">
+    <div class="footer__title">We are waiting<br />for your visit</div>
+    <div class="footer__address-information">
+        <div class="footer__address-pic.location">
+            <img src="assets/images/icon/pin.svg" alt="logo_location" />
+        </div>
+        <div class="footer__information-all">
+            <a href="#" target="_blank">1 Central Street, Boston <br />(entrance from the store)</a>
+        </div>
+    </div>
+    <div class="footer__address-information">
+        <div class="footer__address-pic.location">
+            <img src="assets/images/icon/pin.svg" alt="logo_location" />
+        </div>
+        <div class="footer__information-all">
+            <a href="#" target="_blank">18 South Park, London</a>
+        </div>
+    </div>
+</section>
+<div class="footer__image">
+    <img src="assets/images/footer-puppy.png" alt="dog_foto" />
+</div>
+</footer>
 </body>
 
 </html>

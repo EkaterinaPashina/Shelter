@@ -1,0 +1,31 @@
+@media (min-width:$tablet) and (max-width:$big-tablet) {
+    .block-activity {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 80px;
+        justify-items: center;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    .block-activity__pic {
+        justify-self: center;
+        padding: 0;
+        order: 1;
+    }
+}
+@media (max-width:$tablet) {
+    .block-activity {
+        padding-top: 42px;
+        padding-bottom: 42px;
+        gap: 20px;
+    }
+    .block-activity__text {
+        justify-items: center;
+        grid-template-columns: minmax(270px, 300px);
+    }
+    .block-activity__title {
+        font-size: 25px;
+        line-height: 32.5px;
+    }
+}
+
