@@ -1338,6 +1338,7 @@ label {
   }
   .footer__image {
     max-width: 260px;
+    padding-top: 45px;
     padding-right: 30px;
   }
 }
