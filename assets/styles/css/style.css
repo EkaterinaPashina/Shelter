@@ -787,7 +787,9 @@ label {
 }
 
 .footer {
-  height: 350px;
+  height: auto;
+  max-width: 1280px;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url(/assets/images/footer-gradient-background.svg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
@@ -852,8 +854,7 @@ label {
 }
 
 .footer__image {
-  width: 300px;
-  height: 310px;
+  max-width: 300px;
   padding-top: 40px;
   padding-right: 40px;
 }
@@ -1262,13 +1263,7 @@ label {
 }
 @media (max-width: 1025px) {
   .footer {
-    height: auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     background: url(/assets/images/footer-gradient-background.svg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1278,45 +1273,19 @@ label {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .footer a {
-    text-decoration: none;
-    color: #F1CDB3;
-  }
-  .footer a:hover {
-    text-decoration: underline;
-  }
   .footer__contact,
 .footer__address {
-    padding-top: 56px;
-    padding-left: 30px;
     padding-right: 30px;
   }
   .footer__contact-information,
 .footer__address-information {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer__image {
-    width: 300px;
-    height: 310px;
-    padding-top: 40px;
   }
 }
 @media (max-width: 768px) {
   .footer {
-    height: auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     background: url(/assets/images/footer-gradient-background.svg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1326,13 +1295,6 @@ label {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .footer a {
-    text-decoration: none;
-    color: #F1CDB3;
-  }
-  .footer a:hover {
-    text-decoration: underline;
-  }
   .footer__contact,
 .footer__address {
     padding-top: 30px;
@@ -1340,46 +1302,27 @@ label {
     padding-right: 30px;
   }
   .footer__image {
-    width: 300px;
-    height: 310px;
     padding-top: 0px;
-    padding-right: 40px;
   }
 }
 @media (max-width: 320px) {
   .footer {
-    height: auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     background: url(/assets/images/footer-gradient-background.svg), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer a {
-    text-decoration: none;
-    color: #F1CDB3;
-  }
-  .footer a:hover {
-    text-decoration: underline;
   }
   .footer__title {
-    font-family: "Georgia";
-    font-style: normal;
-    font-weight: 400;
+    color: #545454;
+    font-size: 35px;
+    line-height: 45px;
+    /* line-height: 130%; */
+    color: #fff;
     font-size: 25px;
     line-height: 130%;
     /* or 32px */
-    letter-spacing: 0.06em;
     text-align: center;
-    color: #fff;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1389,21 +1332,12 @@ label {
   }
   .footer__contact,
 .footer__address {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
   }
   .footer__image {
-    width: 260px;
-    height: 269px;
-    padding-top: 40px;
+    max-width: 260px;
     padding-right: 30px;
-    padding-left: 30px;
   }
 }
