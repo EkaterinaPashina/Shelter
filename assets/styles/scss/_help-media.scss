@@ -1,18 +1,18 @@
 @media (max-width:$big-tablet) {
-    .icons__line {
+    .help__line {
         padding-left: 69px;
         padding-right: 69px;
         justify-content: space-between;
         column-gap: 60px;
     }
 
-    .icons__item {
+    .help__item {
         width: 170px;
     }
 }
 
 @media (max-width:$tablet) {
-    .icons__line {
+    .help__line {
         width: 320px;
         padding-left: 15px;
         padding-right: 15px;
@@ -24,18 +24,18 @@
         padding-right: 0;
     }
 
-    .icons__item {
+    .help__item {
         width: 130px;
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .item__subtitle {
+    .help__subtitle {
         font-size: 15px;
         padding-top: 15px;
     }
 
-    .icons__title {
+    .help__title {
         font-size: 25px;
         line-height: 32px;
         max-width: 224px;
