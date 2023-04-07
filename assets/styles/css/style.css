@@ -12,11 +12,11 @@
 }
 
 /* color-light-l */
-.footer__title, .donation-content_subtitle, .donation-content__title, .help__title, .title-h2, .logo__title {
+.footer__title, .donation-content_subtitle, .donation-content__title, .help__title, .nickname, .button, .pets__heading, .title-h2, .logo__title {
   letter-spacing: 0.06em;
 }
 
-.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .item__subtitle, .help__title, .title-h2, .block-main__title, .logo__title {
+.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .item__subtitle, .help__title, .nickname, .button, .pets__heading, .title-h2, .block-main__title, .logo__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -40,11 +40,11 @@
 }
 
 /* color-light-l */
-.footer__title, .donation-content_subtitle, .donation-content__title, .help__title, .title-h2, .logo__title {
+.footer__title, .donation-content_subtitle, .donation-content__title, .help__title, .nickname, .button, .pets__heading, .title-h2, .logo__title {
   letter-spacing: 0.06em;
 }
 
-.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .item__subtitle, .help__title, .title-h2, .block-main__title, .logo__title {
+.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .item__subtitle, .help__title, .nickname, .button, .pets__heading, .title-h2, .block-main__title, .logo__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -258,11 +258,11 @@ label {
 }
 
 /* color-light-l */
-.footer__title, .donation-content_subtitle, .donation-content__title, .help__title, .title-h2, .logo__title {
+.footer__title, .donation-content_subtitle, .donation-content__title, .help__title, .nickname, .button, .pets__heading, .title-h2, .logo__title {
   letter-spacing: 0.06em;
 }
 
-.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .item__subtitle, .help__title, .title-h2, .logo__title, .block-main__title {
+.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .item__subtitle, .help__title, .nickname, .button, .pets__heading, .title-h2, .logo__title, .block-main__title {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -357,12 +357,12 @@ label {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 
 .content {
   z-index: 1;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   max-width: 1280px;
   min-height: 440px;
   margin: 0 auto;
@@ -380,7 +380,7 @@ label {
   width: 270px;
   height: 435px;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 .metrica img {
@@ -400,7 +400,7 @@ label {
   padding-top: 80px;
 }
 
-h2 {
+.nickname {
   color: #545454;
 }
 
@@ -416,7 +416,7 @@ h2 {
   border-radius: 100px;
   font-size: 17px;
   line-height: 22px;
-  background-color: #f1cdb3;
+  background-color: #F1CDB3;
   text-decoration: none;
   color: #292929;
   gap: 10px;
@@ -424,21 +424,21 @@ h2 {
 }
 
 .button:hover {
-  background-color: #fddcc4;
-  border: 5px solid #fddcc4;
+  background-color: #FDDCC4;
+  border: 5px solid #FDDCC4;
 }
 
 .but {
   width: 52px;
   height: 52px;
   border-radius: 180%;
-  color: #f1cdb3;
-  border: 2px solid #f1cdb3;
+  color: #F1CDB3;
+  border: 2px solid #F1CDB3;
 }
 
 .but:hover {
-  background-color: #fafafa;
-  border: 3px solid #fddcc4;
+  background-color: #FAFAFA;
+  border: 3px solid #FDDCC4;
 }
 
 .met {
@@ -448,8 +448,8 @@ h2 {
   border-radius: 100px;
   font-size: 17px;
   line-height: 22px;
-  border: 2px solid #f1cdb3;
-  background-color: #fafafa;
+  border: 2px solid #F1CDB3;
+  background-color: #FAFAFA;
   color: #292929;
 }
 
@@ -459,6 +459,7 @@ h2 {
   color: #545454;
   padding-top: 30px;
   margin-top: 0;
+  margin-bottom: 16px;
   padding-bottom: 25px;
 }
 
@@ -632,11 +633,11 @@ h2 {
 }
 
 /* color-light-l */
-.footer__title, .donation-content_subtitle, .donation-content__title, .logo__title, .title-h2, .help__title {
+.footer__title, .donation-content_subtitle, .donation-content__title, .logo__title, .title-h2, .pets__heading, .button, .nickname, .help__title {
   letter-spacing: 0.06em;
 }
 
-.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .logo__title, .block-main__title, .title-h2, .help__title, .item__subtitle {
+.footer__information-all, .footer__title, .donation-content_subtitle, .donation__search-txt, .donation-content__title, .logo__title, .block-main__title, .title-h2, .pets__heading, .button, .nickname, .help__title, .item__subtitle {
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -1065,6 +1066,11 @@ h2 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+}
+@media (max-width: 1280px) {
+  .pets {
+    display: none;
   }
 }
 @media (max-width: 1025px) {

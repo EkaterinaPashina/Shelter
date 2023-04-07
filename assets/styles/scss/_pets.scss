@@ -3,12 +3,12 @@
     height: 877px;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: #f6f6f6;
+    background-color: $color-light-l;
 }
 
 .content {
     z-index: 1;
-    background-color: #f6f6f6;
+    background-color: $color-light-l;
     max-width: 1280px;
     min-height: 440px;
     margin: 0 auto;
@@ -25,7 +25,7 @@
     width: 270px;
     height: 435px;
     text-align: center;
-    background-color: #fafafa;
+    background-color: $color-light-s;
 }
 
 .metrica img {
@@ -34,9 +34,11 @@
 }
 
 .pets__heading {
+    @extend %title;
+    @extend %title_H;
     font-size: 35px;
     line-height: 45px;
-    color: #545454;
+    color: $color-dark-l;
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
@@ -44,8 +46,8 @@
     padding-top: 80px;
 }
 
-h2 {
-    color: #545454;
+.nickname {
+    color: $color-dark-l;
 }
 
 
@@ -55,35 +57,37 @@ h2 {
 }
 
 .button {
+    @extend %title;
+    @extend %title_H;
     width: 261px;
     height: 52px;
     padding: 15px 45px;
     border-radius: 100px;
     font-size: 17px;
     line-height: 22px;
-    background-color: #f1cdb3;
+    background-color: $color-primary;
     text-decoration: none;
-    color: #292929;
+    color: $color-dark-3xl;
     gap: 10px;
     border: none;
 }
 
 .button:hover {
-    background-color: #fddcc4;
-    border: 5px solid #fddcc4;
+    background-color: $color-primary-light;
+    border: 5px solid $color-primary-light;
 }
 
 .but {
     width: 52px;
     height: 52px;
     border-radius: 180%;
-    color: #f1cdb3;
-    border: 2px solid #f1cdb3;
+    color: $color-primary;
+    border: 2px solid $color-primary;
 }
 
 .but:hover {
-    background-color: #fafafa;
-    border: 3px solid #fddcc4;
+    background-color: $color-light-s;
+    border: 3px solid $color-primary-light;
 }
 
 .met {
@@ -93,18 +97,21 @@ h2 {
     border-radius: 100px;
     font-size: 17px;
     line-height: 22px;
-    border: 2px solid #f1cdb3;
-    background-color: #fafafa;
-    color: #292929;
+    border: 2px solid $color-primary;
+    background-color: $color-light-s;
+    color: $color-dark-3xl;
 }
 
 .nickname {
+    @extend %title;
+    @extend %title_H;
     font-size: 20px;
     line-height: 23px;
 
-    color: #545454;
+    color: $color-dark-l;
     padding-top: 30px;
     margin-top: 0;
+    margin-bottom: 16px;
     padding-bottom: 25px;
 }
 
