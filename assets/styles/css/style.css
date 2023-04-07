@@ -299,8 +299,8 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 50vw 50vw;
-  grid-template-columns: 50vw 50vw;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   padding-top: 80px;
   padding-bottom: 100px;
   padding-left: 40px;
@@ -1007,7 +1007,7 @@ h2 {
     width: 100%;
   }
 }
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 767px) and (max-width: 1025px) {
   .about-content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1017,6 +1017,8 @@ h2 {
     justify-items: center;
     padding-top: 80px;
     padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .about-content > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -1031,7 +1033,7 @@ h2 {
             order: 1;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .about-content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1040,31 +1042,33 @@ h2 {
     -ms-grid-column-align: center;
         justify-self: center;
     padding-top: 42px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 42px;
-    gap: 20px;
+    gap: 42px;
   }
   .about-content > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
   .about-content__text {
-    justify-items: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-columns: minmax(270px, 300px);
-    grid-template-columns: minmax(270px, 300px);
+    -ms-grid-columns: minmax(250px, 300px);
+    grid-template-columns: minmax(250px, 300px);
+    gap: 22px;
   }
   .title-h2 {
+    text-align: center;
     font-size: 25px;
     line-height: 32.5px;
   }
   .about-content__pic {
     -ms-grid-column-align: center;
         justify-self: center;
-    padding: 0;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    padding: 0;
+    height: 354px;
   }
 }
 @media (max-width: 1025px) {
@@ -1082,7 +1086,7 @@ h2 {
     width: 170px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .help__line {
     width: 320px;
     padding-left: 15px;
@@ -1118,7 +1122,7 @@ h2 {
     padding-bottom: 42px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .donation__container {
     max-width: 768px;
     max-height: 783px;
@@ -1302,7 +1306,7 @@ h2 {
     padding-top: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     height: auto;
     -webkit-box-sizing: border-box;
@@ -1401,3 +1405,4 @@ h2 {
     padding-left: 30px;
   }
 }
+/*# sourceMappingURL=style.css.map */
