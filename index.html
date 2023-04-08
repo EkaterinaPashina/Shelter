@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozy House</title>
-    <!-- <link rel="shortcut icon" href="./assets/images/icon/favicon_32.png" type="image/png"> -->
-    <link rel="shortcut icon" href="./assets/images/icon/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./assets/images/icon/favicon_32.png" type="image/png">
+    <!-- <link rel="shortcut icon" href="./assets/images/icon/favicon.png" type="image/png"> -->
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -18,54 +18,54 @@
 
 <body>
     <header class="header">
-        <!-- <div class="container"> -->
-        <div class="navbar">
-            <div class="logo">
-                <h2 class="logo__title">Cozy House</h2>
-                <h3 class="logo__subtitle">Shelter for pets in Boston</h3>
-            </div>
-            <input class="switcher" id="menu" type="checkbox" />
-            <label class="open" for="menu">
-                <i class="fa fa-bars"></i>
-            </label>
-            <nav class="nav">
-                <ul class="nav__menu">
-                    <li class="nav__item">
-                        <a href="#abouts">About the shelter</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" target="_blank">Our pets</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#helps">Help the shelter</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-                <label class="close" for="menu">
-                    <i class="fa fa-bars fa-rotate-90"></i>
+        <div class="container container-header">
+            <div class="navbar">
+                <div class="logo">
+                    <h2 class="logo__title">Cozy House</h2>
+                    <h3 class="logo__subtitle">Shelter for pets in Boston</h3>
+                </div>
+                <input class="switcher" id="menu" type="checkbox" />
+                <label class="open" for="menu">
+                    <i class="fa fa-bars"></i>
                 </label>
-            </nav>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a href="#abouts">About the shelter</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" target="_blank">Our pets</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#helps">Help the shelter</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                    <label class="close" for="menu">
+                        <i class="fa fa-bars fa-rotate-90"></i>
+                    </label>
+                </nav>
+            </div>
+            <section class="block-main block">
+                <div class="block-main__text">
+                    <h1 class="block-main__title">
+                        Not only people<br />
+                        need a house
+                    </h1>
+                    <p class="block-main__subtitle">
+                        We offer to give a chance to a little and nice puppy with an
+                        extremely wide and open heart. He or she will love you more than
+                        anybody else in the world, you will see!
+                    </p>
+                    <button class="block-main__btn btn">Make a friend</button>
+                </div>
+                <div class="block-main__img">
+                    <img class="block-main__img_bigdog" src="./assets/images/start-screen-puppy.png" alt="Dog" />
+                </div>
+            </section>
         </div>
-        <section class="block-main block">
-            <div class="block-main__text">
-                <h1 class="block-main__title">
-                    Not only people<br />
-                    need a house
-                </h1>
-                <p class="block-main__subtitle">
-                    We offer to give a chance to a little and nice puppy with an
-                    extremely wide and open heart. He or she will love you more than
-                    anybody else in the world, you will see!
-                </p>
-                <button class="block-main__btn btn">Make a friend</button>
-            </div>
-            <div class="block-main__img">
-                <img class="block-main__img_bigdog" src="./assets/images/start-screen-puppy.png" alt="Dog" />
-            </div>
-        </section>
-        <!-- </div> -->
     </header>
 
     <main>
@@ -336,24 +336,40 @@
         </section>
         <!-- иконки Екатерины -->
         <!-- пятый блок-финпомощь начало -->
-        <section class="donation">
-            <div class="donation__block">
-                <div class="donation__block-img">
-                    <img class="donation__img" src="./assets/images/donation-dog.png" alt="dog">
-                </div>
-                <div class="donation__block-text">
-                    <h2 class="donation__block-title">
-                        You can also<br> make a donation</h2>
-                    <p class="donation__block-bank">
-                        Name of the bank / Type of bank account</p>
-                    <div class="donation__credit-card">
-                        <img class="donation__credit-icon" src="./assets/images/icon/credit-card.svg" alt="credit-card">
-                        <input class="donation__credit-txt" type="text" placeholder="8380 2880 8028 8791 7435">
+        <section class="donation" id="donations">
+            <div class="container">
+                <div class="donation__block">
+                    <div class="donation__block-img">
+                        <picture class="donation__block-img">
+                            <source srcset="./assets/images/donation-dog-small.png" type="images/png"
+                                media="(max-width:320px)" />
+                            <source srcset="./assets/images/donation-dog-middle.png" type="images/png"
+                                media="(min-width:320px)" />
+                            <source srcset="./assets/images/donation-dog.png" type="images/png"
+                                media="(min-width:1025px)" />
+                            <img class="donation__img" src="./assets/images/donation-dog.png" alt="dog" />
+                        </picture>
                     </div>
-                    <p class="donation__block-paragraf">Legal information and lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Maecenas a
-                        ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
-                        vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <div class="donation__block-text">
+                        <h2 class="donation__block-title">
+                            You can also<br />
+                            make a donation
+                        </h2>
+                        <p class="donation__block-bank">
+                            Name of the bank / Type of bank account
+                        </p>
+                        <div class="donation__credit-card">
+                            <img class="donation__credit-icon" src="./assets/images/icon/credit-card.svg"
+                                alt="credit-card" />
+                            <input class="donation__credit-txt" type="text" placeholder="8380 2880 8028 8791 7435" />
+                        </div>
+                        <p class="donation__block-paragraf">
+                            Legal information and lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
+                            sed ac diam. Praesent ultrices maximus tortor et vulputate.
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -383,7 +399,7 @@
                 </div>
             </div>
         </div>
-  
+
         <div class="footer__address">
             <div class="footer__title">We are waiting<br />for your visit</div>
             <div class="footer__address-information">

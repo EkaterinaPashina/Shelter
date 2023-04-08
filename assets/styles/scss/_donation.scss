@@ -1,38 +1,32 @@
 @import "variables";
 @import "mixins";
 
-.donation {
-    max-width: 1280px;
+.donation__block {
     min-height: 462px;
     background: $color-light-l;
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-.donation__block {
-    max-width: 915px;
-    height: 100%;
-    margin: 80px 20px 100px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .donation__block-img {
     max-width: 505px;
     height: 100%;
-    padding-right: 30px;
-
-    .donation__img {
-        max-width: 100%;
-        height: auto;
-    }
+    padding-top: 91px;
+    padding-bottom: 110px;
 }
+
+.donation__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 .donation__block-text {
     max-width: 380px;
     min-height: 282px;
+    padding-left: 30px;
 }
 
 .donation__block-title {

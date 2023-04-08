@@ -1,18 +1,19 @@
 @import "variables";
 @import "mixins";
-// @import "_header_media";
 
+// @import "_header_media";
 .header {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100%;
     background: $bggradient;
     background-size: $bgsize;
-    padding: 0 40px;
+}
+
+.container-header {
+    max-width: 1280px;
+    min-height: 100%;
 }
 
 .navbar {
-    padding: 40px;
+    padding: 30px 43px 0;
     @include center-between;
 }
 
@@ -87,6 +88,7 @@ label {
     grid-column-gap: 42px;
     justify-content: space-between;
     margin-top: 83px;
+    padding: 0 40px;
 }
 
 .block-main__text {
