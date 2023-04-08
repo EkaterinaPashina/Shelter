@@ -9,13 +9,9 @@
     background: $bggradient;
     background-size: $bgsize;
     padding: 0 40px;
-
-    // min-height: 100vh;
-    // height: 908px;
 }
 
 .navbar {
-    // min-height: 100px;
     padding-top: 40px;
     @include center-between;
 }
@@ -90,9 +86,6 @@ label {
     grid-column-gap: 42px;
     justify-content: space-between;
     margin-top: 90px;
-
-    // display: flex;
-    // align-items: center;
 }
 
 .block-main__text {
@@ -121,14 +114,16 @@ label {
 
 .block-main__img {
     grid-column: 2/3;
-    max-width: 100%;
+    max-width: 728px;
+    height: 100%;
     display: flex;
     margin-right: 0;
     margin-bottom: 0;
     text-align: right;
 
     .block-main__img_bigdog {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         padding-bottom: 0;
         display: inline;
     }
