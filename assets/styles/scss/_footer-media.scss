@@ -28,8 +28,8 @@
     .footer__contact,
     .footer__address {
         padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 21px;
+        padding-right: 21px;
     }
 
     .footer__block_img {
@@ -44,6 +44,7 @@
     }
 
     .footer__title {
+        max-width: 270px;
         @include h2;
         color: $color-light-xl;
         font-size: 25px;
@@ -56,9 +57,10 @@
 
     .footer__contact,
     .footer__address {
+        max-width: 265px;
         padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .footer__block_img {
@@ -68,6 +70,48 @@
 
         .footer__img {
             max-width: 260px;
+            height: 100%;
+        }
+    }
+}
+
+@media (min-width:$minimobile) and (max-width: 315px) {
+    .footer {
+        background: $bggradient;
+        flex-direction: column;
+    }
+
+    .footer__title {
+        max-width: 270px;
+        color: $color-light-xl;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__contact,
+    .footer__address {
+        max-width: 240px;
+        padding-top: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .footer__information-all {
+        font-size: 18px;
+    }
+
+    .footer__block_img {
+        max-width: 240px;
+        height: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        .footer__img {
+            max-width: 230px;
             height: 100%;
         }
     }
