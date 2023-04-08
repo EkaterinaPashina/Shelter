@@ -12,7 +12,7 @@
 }
 
 .navbar {
-    padding-top: 40px;
+    padding: 40px;
     @include center-between;
 }
 
@@ -78,14 +78,15 @@ label {
 
 
 .block-main {
-    min-height: 728px;
+    // min-height: 728px;
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: minmax(150px, 462px) minmax(150px, 698px);
     grid-template-rows: auto;
     grid-column-gap: 42px;
     justify-content: space-between;
-    margin-top: 90px;
+    margin-top: 83px;
 }
 
 .block-main__text {
@@ -97,13 +98,13 @@ label {
 .block-main__title {
     @include h1;
     color: $color-light-xl;
-    margin-top: 164px;
+    margin-top: 160px;
 }
 
 .block-main__subtitle {
     @include p;
     color: $color-dark-s;
-    padding-top: 10.72px;
+    padding-top: 11.72px;
     padding-bottom: 43px;
 }
 
@@ -112,6 +113,16 @@ label {
     width: 207px;
 }
 
+// .donation__block-img {
+//     max-width: 505px;
+//     height: 100%;
+//     padding-right: 30px;
+
+//     .donation__img {
+//         max-width: 100%;
+//         height: auto;
+//     }
+// }
 .block-main__img {
     grid-column: 2/3;
     max-width: 728px;
@@ -124,7 +135,7 @@ label {
     .block-main__img_bigdog {
         max-width: 100%;
         height: auto;
-        padding-bottom: 0;
-        display: inline;
+        // padding-bottom: 0;
+        // display: inline;
     }
 }

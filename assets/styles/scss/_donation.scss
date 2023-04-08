@@ -47,7 +47,6 @@
     // text-align: center;
 }
 
-
 .donation__credit-card {
     border: none;
     display: flex;
@@ -59,7 +58,6 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
 
 .donation__credit-icon {
     padding-left: 15px;
@@ -73,7 +71,6 @@
     display: flex;
     align-items: center;
 }
-
 
 .donation__block-paragraf {
     @include p;

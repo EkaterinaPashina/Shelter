@@ -18,6 +18,7 @@
 
 <body>
     <header class="header">
+        <!-- <div class="container"> -->
         <div class="navbar">
             <div class="logo">
                 <h2 class="logo__title">Cozy House</h2>
@@ -64,6 +65,7 @@
                 <img class="block-main__img_bigdog" src="./assets/images/start-screen-puppy.png" alt="Dog" />
             </div>
         </section>
+        <!-- </div> -->
     </header>
 
     <main>
@@ -228,8 +230,9 @@
             <div id="popup" class="popup">
                 <div class="popup__body">
                     <div class="popup__content">
-                        <a href="##" class="popup__close">X</a>
-                        <img src="./assets/images/swiper/jennifer_modal.png" alt="" />
+                        <a href="##" class="popup__close"><img src="./assets/images/swiper/modal_close_button.png"
+                                alt="close_button"></a>
+                        <img src="./assets/images/swiper/jennifer_modal.png" alt="jennifer_modal" />
                         <div class="popup__section">
                             <div class="popup__title">Jennifer</div>
                             <div class="popup__text">
@@ -301,7 +304,7 @@
                     </picture>
                     <h3 class="item__subtitle">Shampoos</h3>
                 </div>
-                <div class="help__item icons__item_vit-col-position">
+                <div class="help__item help__item_vit-col-position">
                     <picture>
                         <source srcset="./assets/images/icon/vitamins-mobile.svg" media="(max-width:768px)" />
                         <img src="./assets/images/icon/vitamins.svg" alt="Vitamins" />
@@ -315,7 +318,7 @@
                     </picture>
                     <h3 class="item__subtitle">Medicines</h3>
                 </div>
-                <div class="help__item icons__item_vit-col-position">
+                <div class="help__item help__item_vit-col-position">
                     <picture>
                         <source srcset="./assets/images/icon/collars-or-leashes-mobile.svg" media="(max-width:768px)" />
                         <img src="./assets/images/icon/collars-or-leashes.svg" alt="Collars / leashes" />
@@ -334,34 +337,25 @@
         <!-- иконки Екатерины -->
         <!-- пятый блок-финпомощь начало -->
         <section class="donation">
-            <div class="donation__container">
-                <div class="donation__block">
-                    <div class="donation__block_img">
-                        <img class="donation__img" src="./assets/images/donation-dog-big.png" alt="dog" />
+            <div class="donation__block">
+                <div class="donation__block-img">
+                    <img class="donation__img" src="./assets/images/donation-dog.png" alt="dog">
+                </div>
+                <div class="donation__block-text">
+                    <h2 class="donation__block-title">
+                        You can also<br> make a donation</h2>
+                    <p class="donation__block-bank">
+                        Name of the bank / Type of bank account</p>
+                    <div class="donation__credit-card">
+                        <img class="donation__credit-icon" src="./assets/images/icon/credit-card.svg" alt="credit-card">
+                        <input class="donation__credit-txt" type="text" placeholder="8380 2880 8028 8791 7435">
                     </div>
-                    <div class="donation__block_text">
-                        <h2 class="donation__block_title">
-                            You can also<br />
-                            make a donation
-                        </h2>
-                        <p class="donation__block_p1">
-                            Name of the bank / Type of bank account
-                        </p>
-                        <div class="search-form">
-                            <button class="search-form__btn">
-                                <img class="search-form__image" src="assets/images/icon/credit-card.svg"
-                                    alt="credit-card" />
-                            </button>
-                            <input class="search-form__txt" type="text" placeholder="Your number card" />
-                        </div>
-
-                        <p class="donation__block_p2">
-                            Legal information and lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
-                            sed ac diam. Praesent ultrices maximus tortor et vulputate.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                        </p>
-                    </div>
+                    <p class="donation__block-paragraf">Legal information and lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Maecenas a
+                        ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
+                        vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+            </div>
         </section>
 
         <!-- пятый блок-финпомощь конец -->
