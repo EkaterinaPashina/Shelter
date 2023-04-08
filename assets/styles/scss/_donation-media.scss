@@ -61,3 +61,52 @@
         font-size: 15px;
     }
 }
+@media (max-width:$mobile) and (min-width:$minimobile)  {
+    .donation__block {
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 42px;
+        object-fit: cover;
+    }
+    .donation__credit-card {
+        width: 240px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .donation__block-text {
+        width: 246px;
+        min-height: 281px;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-top: 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .donation__block-img {
+        width: 246px;
+        height: auto;
+        padding-top: 42px;
+        padding-bottom: 2px;
+        object-fit: cover;
+        
+    }
+    .donation__block-title {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .donation__block-bank {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+        text-align: center;
+    }
+    .donation__credit-txt {
+        font-size: 15px;
+    }
+}
