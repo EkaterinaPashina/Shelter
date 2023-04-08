@@ -1,6 +1,5 @@
 .pets {
     width: 100%;
-    height: 877px;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: $color-light-l;
@@ -52,8 +51,9 @@
 
 
 .clicbottom {
-    margin: 60px auto 100px auto;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 115px;
 }
 
 .button {
