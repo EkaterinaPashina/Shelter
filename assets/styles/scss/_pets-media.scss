@@ -1,5 +1,15 @@
-@media (max-width:$desktop) {
+@media (max-width:$tablet) {
     .pets {
         display: none;
+    }
+}
+
+@media (max-width:$big-tablet) {
+    .swiper {
+        max-width: 650px;
+    }
+
+    .content {
+        max-width: 830px;
     }
 }

@@ -43,4 +43,30 @@
         height: 354px;
     }
 }
+@media (min-width:$minimobile) and (max-width:$mobile){
+    .about-content {
+        grid-template-columns: minmax(250px,319px);
+        grid-template-rows: auto;
+        justify-self: center;
+        justify-items: center;
+        padding-top: 42px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 42px;
+        gap: 42px;
+    }
+    .about-content__pic {
+        justify-self: center;
+        order: 1;
+        padding: 0;
+        height: 340px;
+    }
+    .about-content__text {
+        grid-template-columns: minmax(220px, 240px);
+        gap: 20px;
+    }
+    .title-h2 {
+        text-align: center;
+    }
+}
 

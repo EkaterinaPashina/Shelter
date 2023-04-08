@@ -44,3 +44,9 @@
         padding-bottom: 42px;
     }
 }
+
+@media (max-width:$mobile) {
+    .help__line {
+        width: 160px;
+    }
+}
