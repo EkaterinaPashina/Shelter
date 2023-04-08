@@ -7,7 +7,57 @@
     }
 
     .donation__block-img {
-        min-width: 505px;
-        min-height: 261px;
+        max-width: 505px;
+        max-height: 261px;
+        padding-bottom: 100px;
+        padding-top: 60px;
+    }
+}
+@media (max-width:$tablet) and (min-width:$mobile)  {
+    .donation__block {
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 42px;
+        object-fit: cover;
+    }
+    .donation__credit-card {
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .donation__block-text {
+        width: 300px;
+        min-height: 281px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .donation__block-img {
+        width: 260px;
+        height: auto;
+        padding-top: 42px;
+        padding-bottom: 2px;
+        object-fit: cover;
+        
+    }
+    .donation__block-title {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .donation__block-bank {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0;
+    }
+    .donation__credit-txt {
+        font-size: 15px;
     }
 }
