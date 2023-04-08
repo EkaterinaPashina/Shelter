@@ -1,120 +1,86 @@
-@media (max-width:$tablet) {
+@media (max-width:$big-tablet) {
     .donation__container {
-        max-width: 768px;
-        max-height: 783px;
-    }
-
-    //     .donation__block {
-    //         display: flex;
-    //         flex-direction: column-reverse;
-    //         align-items: center;
-    //     }
-
-
-    .donation__block-img {
-        margin: 80px 131px 100px 132px;
-        flex-basis: 50%;
-    }
-
-    .donation__block_text {
-        width: 380px;
-        height: 282px;
-        margin: 80px 194px 60px 194px;
-        flex-basis: 50%;
-    }
-
-    .donation__block_title {
-        display: flex;
-        align-items: center;
-    }
-
-}
-
-@media (max-width:$mobile) {
-    .donation__container {
-        width: 100%;
-        max-width: 320px;
-        max-height: 542.2px;
-        margin: 0 auto;
+        max-width: 1024px;
+        min-height: 462px;
     }
 
     .donation__block {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0;
+        margin-bottom: 100px;
+        margin-top: 80px;
+    }
+
+    .donation__block-text {
+        width: 380px;
+        min-height: 282px;
+    }
+
+    .donation__block-img {
+        margin: 0;
+        padding-right: 0;
+        padding-top: 60px;
+    }
+}
+
+// @media (max-width:$tablet) {
+//     .donation__container {
+//         max-width: 767px;
+//         min-height: 783px;
+//     }
+// }
+
+@media (max-width:380px) {
+    .donation__container {
+        min-width: 250px;
+        height: 100%;
+        // box-sizing: border-box;
+    }
+
+    .donation__block {
+        text-align: center;
+        margin: 42px auto;
+    }
+
+    .donation__block-text {
+        max-width: 300px;
+        min-height: 282px;
+        box-sizing: border-box;
+        margin: 0 20px;
         text-align: center;
     }
 
-    .donation__block_img {
-        width: 260px;
-        height: 135.2px;
-        margin: 42px 30px;
-        flex-basis: 50%;
-        margin: 0 auto;
+    .donation__block-title {
+        font-size: 25px;
+        border: 1px solid red;
     }
 
-    .donation__block_text {
-        width: 300px;
-        height: 281px;
-        margin: 42px 10px;
-        flex-basis: 50%;
-        margin: 0 auto;
-    }
-
-    .donation__block_title {
-        font-size: 35px;
+    .donation__credit-card {
+        max-width: 281px;
+        font-size: 15px;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
     }
 
-    .donation__block_p1 {
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .donation__credit-icon {
+        padding: 0 15px;
+
+
+        .donation__credit-txt {
+            font-size: 15px;
+            padding-right: 15px;
+        }
     }
 
-    .search-form {
-        border: none;
-        width: 281px;
-        height: 43px;
-        display: inline-flex;
-        /* color-primary */
-        background: $color-primary;
-        border-radius: 9px;
-    }
+    .donation__block-img {
+        max-width: 260px;
+        height: 100%;
 
-    .search-form__txt {
-        @include center-center;
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        border: none;
-        width: 206px;
-        height: 17px;
-        margin-left: 55px;
-        margin-top: 10px;
-        outline: none;
-        background: $color-primary;
-        letter-spacing: 0.06em;
+        .donation__img {
+            max-width: 100%;
+            height: auto;
+        }
     }
-
-    .donation__block_p2 {
-        @include center-center;
-        font-family: Arial;
-        font-style: italic;
-        font-weight: 400px;
-        font-size: 12px;
-        line-height: 18px;
-        text-align: justify;
-        /* or 150% */
-        margin-top: 20px;
-        color: $color-dark-m;
-        /* color-dark-m */
-    }
-
 }

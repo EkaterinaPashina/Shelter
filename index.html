@@ -12,6 +12,9 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/styles/swiper.min.css">
+    <!-- <link rel="shortcut icon" href="./assets/images/icon/favicon.png" type="image/png"> -->
+    <!-- <link rel="shortcut icon" href="./assets/images/icon/domashnee_zhivotnoe_32.png" type="image/png"> -->
+    <link rel="shortcut icon" href="./assets/images/icon/pet_32.png" type="image/png">
 </head>
 
 <body class="container">
@@ -28,16 +31,16 @@
             <nav class="nav">
                 <ul class="nav__menu">
                     <li class="nav__item">
-                        <a href="#" target="_blank">About the shelter</a>
+                        <a href="#about">About the shelter</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" target="_blank">Our pets</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" target="_blank">Help the shelter</a>
+                        <a href="#help">Help the shelter</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" target="_blank">Contacts</a>
+                        <a href="#contacts">Contacts</a>
                     </li>
                 </ul>
                 <label class="close" for="menu">
@@ -65,7 +68,7 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-content">
                 <picture class="about-content__pic">
                     <source srcset="./assets/images/about-pets-small.png" type="images/png" media="(max-width:320px)" />
@@ -248,7 +251,7 @@
         </section>
         <!--Слайдер с модальным окном-->
         <!-- иконки Екатерины -->
-        <section class="help">
+        <section class="help" id="help">
             <h2 class="help__title">How you can help our shelter</h2>
             <div class="help__line">
                 <div class="help__item">
@@ -319,41 +322,30 @@
         <!-- иконки Екатерины -->
         <!-- пятый блок-финпомощь начало -->
         <section class="donation">
-            <div class="donation__container">
-                <div class="donation__block">
-                    <div class="donation__block_img">
-                        <img class="donation__img" src="./assets/images/donation-dog-big.png" alt="dog" />
+            <div class="donation__block">
+                <div class="donation__block-img">
+                    <img class="donation__img" src="./assets/images/donation-dog.png" alt="dog">
+                </div>
+                <div class="donation__block-text">
+                    <h2 class="donation__block-title">
+                        You can also<br> make a donation</h2>
+                    <p class="donation__block-bank">
+                        Name of the bank / Type of bank account</p>
+                    <div class="donation__credit-card">
+                        <img class="donation__credit-icon" src="./assets/images/icon/credit-card.svg" alt="credit-card">
+                        <input class="donation__credit-txt" type="text" placeholder="8380 2880 8028 8791 7435">
                     </div>
-                    <div class="donation__block_text">
-                        <h2 class="donation__block_title">
-                            You can also<br />
-                            make a donation
-                        </h2>
-                        <p class="donation__block_p1">
-                            Name of the bank / Type of bank account
-                        </p>
-                        <div class="search-form">
-                            <button class="search-form__btn">
-                                <img class="search-form__image" src="assets/images/icon/credit-card.svg"
-                                    alt="credit-card" />
-                            </button>
-                            <input class="search-form__txt" type="text" placeholder="Your number card" />
-                        </div>
-
-                        <p class="donation__block_p2">
-                            Legal information and lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
-                            sed ac diam. Praesent ultrices maximus tortor et vulputate.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                        </p>
-                    </div>
+                    <p class="donation__block-paragraf">Legal information and lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Maecenas a
+                        ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
+                        vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
             </div>
         </section>
 
         <!-- пятый блок-финпомощь конец -->
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <section class="footer__contact">
             <div class="footer__title">
                 For questions <br />
