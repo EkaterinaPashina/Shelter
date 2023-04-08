@@ -13,12 +13,10 @@
 .donation__block {
     max-width: 915px;
     height: 100%;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin: 80px 20px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // border: 1px solid red;
 }
 
 .donation__block-img {
@@ -33,20 +31,22 @@
 }
 
 .donation__block-text {
-    width: 380px;
-    height: 100%;
-    // border: 1px solid red;
+    max-width: 380px;
+    min-height: 282px;
 }
 
 .donation__block-title {
     @include h2;
+    display: inline-block;
 }
 
 .donation__block-bank {
     @include h4;
     height: 100%;
     margin: 20px 0;
+    // text-align: center;
 }
+
 
 .donation__credit-card {
     border: none;
@@ -60,6 +60,7 @@
     margin-bottom: 20px;
 }
 
+
 .donation__credit-icon {
     padding-left: 15px;
 }
@@ -72,6 +73,7 @@
     display: flex;
     align-items: center;
 }
+
 
 .donation__block-paragraf {
     @include p;
