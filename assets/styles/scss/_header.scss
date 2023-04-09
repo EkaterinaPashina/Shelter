@@ -1,14 +1,13 @@
 @import "variables";
 @import "mixins";
 
-// @import "_header_media";
 .header {
     background: $bggradient;
     background-size: $bgsize;
 }
 
 .container-header {
-    max-width: 1280px;
+    // max-width: 1280px;
     min-height: 100%;
 }
 
