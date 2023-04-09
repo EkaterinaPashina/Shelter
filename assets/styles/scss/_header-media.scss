@@ -1,64 +1,6 @@
-@media (max-width:$big-tablet) {
+@media (max-width:$tablet) {
     .container-header {
-        padding: 0 34px;
-    }
-
-    .navbar {
-        padding-top: 30px;
-    }
-
-    .block-main {
-        max-width: 1024px;
-        display: grid;
-        grid-template-columns: minmax(320px, 1023px);
-        grid-template-rows: repeat(2, auto);
-        gap: 100px;
-        min-height: 1015px;
-        margin-top: 60px;
-        border: 1px solid white;
-    }
-
-    .block-main__text {
-        grid-column: 1/1;
-        grid-row: 1/2;
-        max-width: 460px;
-        margin: 0 auto;
-    }
-
-    .block-main__title {
-        margin-top: 0;
-    }
-
-    .block-main__subtitle {
-        padding-top: 11.72px;
-        padding-bottom: 43px;
-    }
-
-    .block-main__btn {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-
-    .block-main__img {
-        grid-column: 1/1;
-        grid-row: 2/3;
-        max-width: 569px;
-        height: 100%;
-        margin-left: auto;
-
-        .block-main__img_bigdog {
-            max-width: 100%;
-            height: auto;
-        }
-    }
-}
-
-@media (max-width:768px) {
-
-    .container-header {
-        max-width: 768px;
+        max-width: 767px;
         min-height: 1165px;
     }
 
@@ -86,13 +28,13 @@
     .nav {
         position: fixed;
         width: 320px;
-        height: 100%;
+        height: 800px;
         background: $color-dark-3xl;
         top: 0;
         right: -100%;
         font-size: 30px;
         text-align: center;
-        padding: 100px 0;
+        padding: 30px 0;
         transition: .7s;
 
         .nav__menu {
@@ -102,81 +44,158 @@
                 padding: 20px;
             }
         }
+
     }
 
     .block-main {
+        max-width: 768px;
         display: grid;
-        grid-template-columns: minmax(320px, 708px);
-        grid-template-rows: repeat(2, auto);
-        gap: 0;
-        margin-top: 60px auto;
+        grid-template-columns: minmax(300px, 768px);
+        grid-template-rows: minmax(322px, auto) minmax(593px, auto);
+        gap: 100px;
         min-height: 1015px;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+
+    .block-main__text {
+        grid-column: 1/1;
+        grid-row: 1/2;
+        max-width: 460px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .block-main__title {
+        margin-top: 0;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .block-main__subtitle {
+        padding-top: 11.72px;
+        padding-bottom: 43px;
+    }
+
+    .block-main__btn {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .block-main__img {
+        grid-column: 1/1;
+        grid-row: 2/3;
+        max-width: 569px;
+        height: 100%;
+        margin-left: auto;
+
+        .block-main__img_bigdog {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 
-// @media (max-width:420px) {
-//     .header {
-//         max-width: 300px;
-//         min-height: 823px;
-//         padding: 0;
-//     }
+@media (max-width:$mobile) {
+    .container-header {
+        max-width: 320px;
+        min-height: 823px;
+    }
 
-//     .navbar {
-//         padding: 30px 20px 0 20px;
-//     }
+    .navbar {
+        padding: 30px 20px 0;
+    }
 
-//     .block-main {
-//         max-width: 300px;
-//         display: grid;
-//         grid-template-columns: minmax(100px, 280px);
-//         grid-template-rows: repeat(2, auto);
-//         grid-row-gap: 0;
-//         justify-content: space-between;
-//         box-sizing: border-box;
-//         padding: 0 10px;
-//         margin-top: 60px;
-//         min-height: 673px;
-//     }
+    .open,
+    .close {
+        display: block;
+        max-width: 320px;
+        color: $color-primary;
+    }
 
-//     .block-main__text {
-//         grid-column: 1/1;
-//         grid-row: 1/2;
-//         max-width: 300px;
-//         min-height: 296px;
-//         text-align: center;
+    .close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
 
-//         .block-main__title {
-//             display: inline-block;
-//             margin: 0;
-//             font-size: 25px;
-//             border: 1px solid red;
-//             line-height: 130%;
-//             /* or 32px */
-//             letter-spacing: 0.06em;
-//         }
+    .switcher:checked~.nav {
+        right: 0;
+    }
 
-//         .block-main__subtitle {
-//             padding-top: 10.72px;
-//             padding-bottom: 43px;
-//         }
+    .nav {
+        position: fixed;
+        width: 320px;
+        height: 800px;
+        background: $color-dark-3xl;
+        top: 0;
+        right: -100%;
+        font-size: 30px;
+        text-align: center;
+        padding: 30px 0;
+        transition: .7s;
 
-//         .block-main__btn {
-//             position: relative;
-//             left: 30%;
-//             transform: translate(-40%, 0);
-//         }
-//     }
+        .nav__menu {
+            flex-direction: column;
 
-//     .block-main__img {
-//         grid-column: 1/1;
-//         grid-row: 2/3;
-//         max-width: 260px;
-//         height: 100%;
-//         margin-left: auto;
+            a {
+                padding: 20px;
+            }
+        }
 
-//         .block-main__img_bigdog {
-//             max-width: 100%;
-//             height: auto;
-//         }
-//     }
-// }
+    }
+
+    .block-main {
+        max-width: 320px;
+        display: grid;
+        grid-template-columns: minmax(320px, 768px);
+        grid-template-rows: minmax(296px, auto) minmax(271px, auto);
+        gap: 105px;
+        min-height: 673px;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+
+    .block-main__text {
+        grid-column: 1/1;
+        grid-row: 1/2;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .block-main__title {
+        margin-top: 0;
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .block-main__subtitle {
+        padding-top: 11.72px;
+        padding-bottom: 43px;
+        font-size: 15px;
+    }
+
+    .block-main__btn {
+        text-align: center;
+        width: 207px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .block-main__img {
+        grid-column: 1/1;
+        grid-row: 2/3;
+        max-width: 260px;
+        height: 100%;
+        margin-left: auto;
+
+        .block-main__img_bigdog {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

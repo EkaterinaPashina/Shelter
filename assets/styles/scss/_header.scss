@@ -79,11 +79,11 @@ label {
 
 
 .block-main {
-    // min-height: 728px;
+    min-height: 728px;
     width: 100%;
-    height: auto;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(150px, 462px) minmax(150px, 698px);
+    grid-template-columns: minmax(150px, 460px) minmax(150px, 698px);
     grid-template-rows: auto;
     grid-column-gap: 42px;
     justify-content: space-between;
@@ -115,19 +115,10 @@ label {
     width: 207px;
 }
 
-// .donation__block-img {
-//     max-width: 505px;
-//     height: 100%;
-//     padding-right: 30px;
 
-//     .donation__img {
-//         max-width: 100%;
-//         height: auto;
-//     }
-// }
 .block-main__img {
     grid-column: 2/3;
-    max-width: 728px;
+    max-width: 698px;
     height: 100%;
     display: flex;
     margin-right: 0;
@@ -137,7 +128,5 @@ label {
     .block-main__img_bigdog {
         max-width: 100%;
         height: auto;
-        // padding-bottom: 0;
-        // display: inline;
     }
 }
