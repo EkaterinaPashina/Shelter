@@ -1,5 +1,5 @@
 @media (max-width:$big-tablet) {
-    .footer {
+    .container-footer {
         background: $bggradient;
         flex-direction: row;
         flex-wrap: wrap;
@@ -18,7 +18,7 @@
 }
 
 @media (max-width:$tablet) {
-    .footer {
+    .container-footer {
         background: $bggradient;
         flex-direction: row;
         flex-wrap: wrap;
@@ -38,7 +38,7 @@
 }
 
 @media (max-width:$mobile) {
-    .footer {
+    .container-footer {
         background: $bggradient;
         flex-direction: column;
     }
@@ -76,7 +76,7 @@
 }
 
 @media (min-width:$minimobile) and (max-width: 315px) {
-    .footer {
+    .container-footer {
         background: $bggradient;
         flex-direction: column;
     }
