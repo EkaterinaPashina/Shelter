@@ -19,24 +19,25 @@
 .logo {
     display: flex;
     flex-direction: column;
-}
 
-.logo__title {
-    @extend %title;
-    @extend %title_H;
-    font-size: 32px;
-    line-height: 110%;
-    /* or 35px */
-    margin-bottom: 10px;
-    color: $color-primary;
-}
 
-.logo__subtitle {
-    @extend %subtitle;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0.1em;
-    color: $color-light-xl;
+    &__title {
+        @extend %title;
+        @extend %title_H;
+        font-size: 32px;
+        line-height: 110%;
+        /* or 35px */
+        margin-bottom: 10px;
+        color: $color-primary;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: $color-light-xl;
+    }
 }
 
 .switcher {
@@ -57,7 +58,7 @@ label {
     @include center-between;
     color: $color-dark-s;
 
-    .nav__menu {
+    &__menu {
         display: flex;
         list-style-type: none;
     }
@@ -82,47 +83,46 @@ label {
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(150px, 460px) minmax(150px, 698px);
+    grid-template-columns: minmax(150px, 460px) minmax(500px, 698px);
     grid-template-rows: auto;
     grid-column-gap: 42px;
     justify-content: space-between;
     margin-top: 83px;
     padding: 0 40px;
-}
 
-.block-main__text {
-    width: 100%;
-    grid-column: 1/2;
-    align-items: center;
-}
+    &__text {
+        width: 100%;
+        grid-column: 1/2;
+        align-items: center;
+    }
 
-.block-main__title {
-    @include h1;
-    color: $color-light-xl;
-    margin-top: 160px;
-}
+    &__title {
+        @include h1;
+        color: $color-light-xl;
+        margin-top: 160px;
+    }
 
-.block-main__subtitle {
-    @include p;
-    color: $color-dark-s;
-    padding-top: 11.72px;
-    padding-bottom: 43px;
-}
+    &__subtitle {
+        @include p;
+        color: $color-dark-s;
+        padding-top: 11.72px;
+        padding-bottom: 43px;
+    }
 
-.block-main__btn {
-    @include button-bg;
-    width: 207px;
-}
+    &__btn {
+        @include button-bg;
+        width: 207px;
+    }
 
-
-.block-main__img {
-    grid-column: 2/3;
-    max-width: 698px;
-    height: 100%;
-    display: flex;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-align: right;
+    &__img {
+        grid-column: 2/3;
+        max-width: 698px;
+        height: 100%;
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 0;
+        text-align: right;
+    }
 
     .block-main__img_bigdog {
         max-width: 100%;

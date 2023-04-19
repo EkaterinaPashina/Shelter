@@ -1,117 +1,93 @@
-@mixin center-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin center-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-%title_H {
-    letter-spacing: 0.06em;
-}
-
-%title {
-    font-family: Georgia;
+@mixin title {
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
 
 @mixin h1 {
-    @extend %title;
-    font-size: 44px;
-    line-height: 130%;
-    /* or 57px */
+    @include title;
+    line-height: 107px;
+    font-size: 88px;
+    color: $color-black;
 }
 
 @mixin h2 {
-    @extend %title;
-    @extend %title_H;
-    color: $color-dark-l;
-    font-size: 35px;
-    line-height: 45px;
-    /* line-height: 130%; */
+    @include title;
+    line-height: 78px;
+    font-size: 64px;
+    color: $color-dark;
 }
 
 @mixin h3 {
-    @extend %title;
-    color: $color-dark-l;
-    font-size: 20px;
-    line-height: 23px;
-    /*line-height: 115%;*/
+    @include title;
+    line-height: 60px;
+    font-size: 48px;
+    color: $color-dark;
 }
 
 @mixin h4 {
-    @include h2;
-    font-size: 15px;
-    line-height: 17px;
-    /*line-height: 110%;*/
+    @include title;
+    line-height: 60px;
+    font-size: 36px;
+    color: $color-dark;
 }
 
-%subtitle {
-    font-family: 'Arial';
+@mixin paragraf {
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
 
 @mixin p {
-    @extend %subtitle;
+    @include paragraf;
     font-size: 15px;
     line-height: 160%;
     /* or 24px */
 }
 
-// все кнопки
-%butt {
-    height: 52px;
-    // padding: 15px 45px;
-    border-radius: 100px;
-    font-family: Georgia;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 0.06em;
-    color: $color-dark-3xl;
-}
-
-// кнопка с исходной заливкой
-@mixin button-bg {
-    @extend %butt;
-    background: $color-primary;
+@mixin btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    border-radius: 15px;
     border: none;
     cursor: pointer;
+}
+
+// кнопка зеленая
+@mixin button-green {
+    @include btn;
+    padding: 17px 35px;
+    background-color: $color-green;
+    color: $color-light;
 
     &:hover {
-        background-color: $color-primary-light;
+        // background-color: $color-primary-light;
         transition: 0.7s;
     }
 
     &:focus {
-        outline-color: transparent;
-        outline-style: solid;
-        box-shadow: 0 0 0 2px #f3c496;
+        // outline-color: transparent;- изменить под требования
+        // outline-style: solid;
+        // box-shadow: 0 0 0 2px #f3c496;
     }
 }
 
-// кнопка без заливки
-@mixin button {
-    @extend %butt;
-    background: $color-primary;
-    border: none;
-    cursor: pointer;
+@mixin button-light {
+    @include btn;
+    padding: 10px 25px;
+    background-color: $color-bg-main;
+    color: $color-dark;
 
     &:hover {
-        background-color: $color-primary-light;
+        // background-color: $color-primary-light;
         transition: 0.7s;
     }
 
     &:focus {
-        outline-color: transparent;
-        outline-style: solid;
-        box-shadow: 0 0 0 2px black;
+        // outline-color: transparent;- изменить под требования
+        // outline-style: solid;
+        // box-shadow: 0 0 0 2px #f3c496;
     }
-
 }
